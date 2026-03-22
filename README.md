@@ -1,116 +1,39 @@
-# 🖥️ Projeto 01, Servidor Web com Amazon EC2
+# ☁️ Portfólio, Marcelo Carrara
 
-![AWS](https://img.shields.io/badge/AWS-EC2-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Apache](https://img.shields.io/badge/Apache-HTTP_Server-D22128?style=for-the-badge&logo=apache&logoColor=white)
-![Linux](https://img.shields.io/badge/Amazon_Linux-232F3E?style=for-the-badge&logo=linux&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Concluído-1A9C3E?style=for-the-badge)
+![AWS](https://img.shields.io/badge/AWS-Cloud-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Status](https://img.shields.io/badge/Em_construção-🔨-yellow?style=for-the-badge)
 
----
-
-## 🎯 Objetivo
-
-Implantar um servidor web em uma instância Amazon EC2 a partir do 0, configurando regras de segurança, automatizando a instalação do Apache via User Data e explorando o redimensionamento de recursos da instância e do volume EBS.
+> Documentação prática da minha jornada de transição para Cloud Computing,
+> com foco em me tornar **Arquiteto de Soluções AWS**.
 
 ---
 
-## 🛠️ Serviços utilizados
+## 🗂️ Projetos
 
-| Serviço | Função |
-|---|---|
-| Amazon EC2 | Instância de servidor virtual na nuvem |
-| Security Group | Controle de tráfego de entrada e saída |
-| Amazon EBS | Armazenamento persistente da instância |
-| Apache HTTP Server | Servidor web instalado via User Data |
+| # | Projeto | Serviços | Status |
+|---|---|---|---|
+| 01 | [Servidor Web com Amazon EC2](./projetos/01-ec2-servidor-web/README.md) | EC2 · EBS · Security Group | ✅ Concluído |
 
----
-
-## 🏗️ Arquitetura da solução
-
-```
-Internet
-    │
-    │  HTTP (porta 80) / HTTPS (porta 443)
-    ▼
-┌─────────────────────────────────────┐
-│           Security Group            │
-│   Permite tráfego HTTP e HTTPS      │
-└─────────────────┬───────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────┐
-│         Amazon EC2 (t2.micro)       │
-│         Amazon Linux 2              │
-│                                     │
-│  ┌─────────────────────────────┐    │
-│  │     Apache HTTP Server      │    │
-│  │   /var/www/html/index.html  │    │
-│  └─────────────────────────────┘    │
-│                                     │
-│  User Data: script de instalação    │
-│  Proteção contra término: ✅ ativa  │
-└─────────────────┬───────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────┐
-│           Amazon EBS                │
-│     Armazenamento persistente       │
-└─────────────────────────────────────┘
-```
+> Novos projetos serão adicionados conforme o avanço nos estudos.
 
 ---
 
-## 📋 Etapas de implementação
+## 🛠️ Tecnologias exploradas
 
-1. Criação de uma instância Amazon EC2 na AWS
-2. Seleção da Amazon Machine Image (AMI), Amazon Linux 2
-3. Escolha do tipo de instância para testes
-4. Configuração do Security Group permitindo acesso HTTP e HTTPS
-5. Ativação da **Proteção contra término** para evitar exclusão acidental
-6. Inserção do script Bash no campo **User Data** para instalação automática do Apache
-7. Redimensionamento da instância e do volume EBS
-8. Inicialização da instância e validação do servidor web
+![EC2](https://img.shields.io/badge/AWS-EC2-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![EBS](https://img.shields.io/badge/AWS-EBS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![IAM](https://img.shields.io/badge/AWS-IAM-DD344C?style=for-the-badge&logo=amazonaws&logoColor=white)
+![VPC](https://img.shields.io/badge/AWS-VPC-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Lambda](https://img.shields.io/badge/AWS-Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
+![RDS](https://img.shields.io/badge/AWS-RDS-527FFF?style=for-the-badge&logo=amazonaws&logoColor=white)
 
 ---
 
-## 📄 Script User Data
+## 📫 Contato
 
-```bash
-#!/bin/bash
-yum -y install httpd
-systemctl enable httpd
-systemctl start httpd
-echo '<html><h1>Marcelo Carrara fazendo projetos!</h1></html>' > /var/www/html/index.html
-```
-
-> O script é executado automaticamente no boot da instância, instalando e iniciando o Apache sem necessidade de acesso manual via SSH.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcelo-carrara-tech/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:marcelo.carrara96@hotmail.com)
 
 ---
 
-## 📸 Evidências
-
-> <img width="1078" height="860" alt="Screenshot_7" src="https://github.com/user-attachments/assets/0c83c546-de0c-44ca-a176-d8f0dedfae82" />
-
-
-
----
-
-## 💡 Aprendizados
-
-- ✅ Processo de criação e configuração de uma instância EC2
-- ✅ Uso do **User Data** para automatizar a instalação de serviços no boot
-- ✅ Papel dos **Security Groups** no controle de acesso à instância
-- ✅ Importância do **Amazon EBS** como armazenamento persistente
-- ✅ Como redimensionar tipo de instância e volume de armazenamento
-- ✅ Proteção contra término acidental de instâncias em produção
-
----
-
-## 🔗 Referências
-
-- [Documentação Amazon EC2](https://docs.aws.amazon.com/ec2/)
-- [Apache HTTP Server](https://httpd.apache.org/)
-- [Amazon EBS](https://docs.aws.amazon.com/ebs/)
-
----
-
-*Projeto realizado no AWS Sandbox — Março 2026*
+*Atualizado em Março 2026*
