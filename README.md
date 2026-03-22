@@ -13,6 +13,7 @@
 | # | Projeto | Serviços | Status |
 |---|---|---|---|
 | 01 | [Servidor Web com Amazon EC2](./projetos/01-ec2-servidor-web/README.md) | EC2 · EBS · Security Group | ✅ Concluído |
+| 02 | [VPC, Servidor Web e Acesso SSH](./projetos/02-vpc-serverweb-ssh-access/README.md) | VPC · IGW · Public Subnet · SSH | ✅ Concluído |
 
 > Novos projetos serão adicionados conforme o avanço nos estudos.
 
