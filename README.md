@@ -14,6 +14,8 @@
 |---|---|---|---|
 | 01 | [Servidor Web com Amazon EC2](./projetos/01-ec2-servidor-web/README.md) | EC2 · EBS · Security Group | ✅ Concluído |
 | 02 | [VPC, Servidor Web e Acesso SSH](./projetos/02-vpc-serverweb-ssh-access/README.md) | VPC · IGW · Public Subnet · SSH | ✅ Concluído |
+| 03 | [Infraestrutura AWS via CLI](./projetos/03-infraestrutura-aws-cli/README.md) | VPC · EC2 · IGW · Route Tables · Security Groups · CLI | ✅ Concluído |
+
 
 > Novos projetos serão adicionados conforme o avanço nos estudos.
 
