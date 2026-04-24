@@ -43,7 +43,7 @@ A infraestrutura foi dividida em 5 camadas principais:
     * Após o status `CREATE_COMPLETE`, verifique a aba **Outputs** para obter as URLs do site no S3 e o endpoint da EC2.
 
 ## 📄 Conclusão
-Este laboratório demonstra a capacidade de provisionar uma stack tecnológica completa em poucos minutos, garantindo que a infraestrutura seja replicável e livre de erros manuais. É um passo fundamental na minha transição para a carreira de **Solutions Architect**.
+Este laboratório demonstra a capacidade de provisionar uma stack tecnológica completa em poucos minutos, garantindo que a infraestrutura seja replicável e livre de erros manuais. É um passo fundamental na minha transição para a carreira de **Solutions Architect**. Todas as imagens registradas do projeto estão na pasta "Evidencias".
 
 ---
 **Marcelo Carrara** *Aspiring Solutions Architect | AWS re/Start Graduate*
