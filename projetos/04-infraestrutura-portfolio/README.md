@@ -52,6 +52,8 @@ Este projeto demonstra a capacidade de provisionar uma stack tecnológica comple
 
 ![Site estático online](./evidencias/siteestatico-online.png)
 
+![IaC - CloudFront](./evidencias/cloudformation-criado.png)
+
 📸 Evidências do Projeto
 Você pode conferir as capturas de tela das etapas de criação e dos recursos ativos na pasta ao lado:
 
