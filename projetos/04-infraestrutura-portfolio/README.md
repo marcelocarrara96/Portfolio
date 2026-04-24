@@ -49,7 +49,7 @@ A infraestrutura foi dividida em 5 camadas principais:
 
 ## 📄 Conclusão
 Este projeto demonstra a capacidade de provisionar uma stack tecnológica completa em poucos minutos através de IaC. É um passo fundamental na minha transição de carreira para **Cloud Analyst Jr**.
-
+![Site estático online](./evidencias/siteestatico-online.png)
 
 📸 Evidências do Projeto
 Você pode conferir as capturas de tela das etapas de criação e dos recursos ativos na pasta ao lado:
