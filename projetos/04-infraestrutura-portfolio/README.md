@@ -44,10 +44,12 @@ A infraestrutura foi dividida em 5 camadas principais:
 2.  Acesse o serviço **S3** e entre no bucket que você acabou de criar.
 3.  Clique em **Upload** e envie os arquivos `index.html`, `style.css` e sua foto.
 4.  Certifique-se de que a política do bucket permite o acesso público conforme configurado no template.
-5.  
+   
+
 
 ## 📄 Conclusão
 Este projeto demonstra a capacidade de provisionar uma stack tecnológica completa em poucos minutos através de IaC. É um passo fundamental na minha transição de carreira para **Solutions Architect**.
+
 
 📸 Evidências do Projeto
 Você pode conferir as capturas de tela das etapas de criação e dos recursos ativos na pasta ao lado:
