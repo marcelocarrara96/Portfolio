@@ -48,7 +48,7 @@ A infraestrutura foi dividida em 5 camadas principais:
 
 
 ## 📄 Conclusão
-Este projeto demonstra a capacidade de provisionar uma stack tecnológica completa em poucos minutos através de IaC. É um passo fundamental na minha transição de carreira para **Solutions Architect**.
+Este projeto demonstra a capacidade de provisionar uma stack tecnológica completa em poucos minutos através de IaC. É um passo fundamental na minha transição de carreira para **Cloud Analyst Jr**.
 
 
 📸 Evidências do Projeto
@@ -58,4 +58,4 @@ Visualizar Evidências: [Clique aqui para abrir a pasta de evidências](./eviden
 
 
 ---
-**Marcelo Carrara** *Aspiring Solutions Architect | AWS re/Start Graduate*
+**Marcelo Carrara** *Aspiring Solutions Architect | AWS re/Start Cloud Practicioner*
