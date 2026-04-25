@@ -31,7 +31,7 @@ A infraestrutura foi dividida em 5 camadas principais:
 ### 2. Deploy da Infraestrutura (CloudFormation)
 1.  Acesse o console da **AWS** e vá para o serviço **CloudFormation**.
 2.  Clique em **Create stack** > **With new resources (standard)**.
-3.  Em *Specify template*, selecione **Upload a template file** e escolha o arquivo `s3fulltest.yaml`.
+3.  Em *Specify template*, selecione **Upload a template file** e escolha o arquivo `project04.yaml`.
 4.  No passo **Specify stack details**:
     * **Stack name:** `ProjetoUnificadoMarcelo`.
     * **KeyPairName:** Selecione sua chave SSH.
