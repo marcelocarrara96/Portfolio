@@ -108,3 +108,15 @@ aws ec2 describe-instances \
 
 _Este laboratório permitiu compreender na prática o provisionamento de infraestrutura utilizando AWS CLI, além de reforçar o entendimento sobre a dependência entre os recursos de rede na AWS, como VPC, Internet Gateway e tabelas de roteamento.
 Também possibilitou praticar a configuração de acesso remoto seguro via SSH em instâncias Linux, utilizando tanto o OpenSSH no PowerShell com chave .pem quanto o PuTTY com chave .ppk, validando a conectividade da infraestrutura criada._
+
+---
+
+<div align="center">
+
+**Marcelo Carrara** · Aspiring Solutions Architect · Paraná, Brasil
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcelo-carrara-tech/)
+[![GitHub](https://img.shields.io/badge/GitHub-FF9900?style=flat&logo=github&logoColor=white)](https://github.com/marcelocarrara96)
+
+</div>
+
