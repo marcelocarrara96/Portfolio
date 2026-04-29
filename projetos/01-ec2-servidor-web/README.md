@@ -112,4 +112,4 @@ echo '<html><h1>Marcelo Carrara fazendo projetos!</h1></html>' > /var/www/html/i
 
 ---
 
-*Projeto realizado no AWS Sandbox — Março 2026*
+*Projeto realizado — Março 2026*
