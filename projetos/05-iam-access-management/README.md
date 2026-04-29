@@ -140,4 +140,4 @@ Add users to groups:
 
 ---
 
-*Projeto realizado no AWS Sandbox — Abril 2026*
+*Projeto realizado — Abril 2026*
