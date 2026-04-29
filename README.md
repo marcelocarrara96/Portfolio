@@ -17,6 +17,7 @@
 | 03 | [Infraestrutura AWS via CLI-PowerShell](./projetos/03-infraestrutura-aws-cli/README.md) | VPC · EC2 · IGW · Route Tables · Security Groups · CLI | ✅ Concluído |
 | 04 | [Infraestrutura Unificada e Portfólio no S3](./projetos/04-infraestrutura-portfolio) | CloudFormation · S3 · VPC · RDS · CloudWatch | ✅ Concluído |
 | 05 | [IAM Access Management](./projetos/05-iam-access-management/README.md) | IAM · Users · Groups · Policies · Password Policy | ✅ Concluído |
+| 06 | [Gerenciamento de Instâncias com AWS Systems Manager](./projetos/06-systems-manager/README.md) | SSM · Fleet Manager · Run Command · Parameter Store · Session Manager | ✅ Concluído |
 
 > Novos projetos serão adicionados conforme o avanço nos estudos.
 
