@@ -32,21 +32,21 @@ Configurar o gerenciamento de identidade e acesso na AWS utilizando o IAM, aplic
 ┌──────────────────────────────────────────────────────────────┐
 │                        AWS Account                           │
 │                                                              │
-│  🔒 Password Policy (aplicada a toda a conta)               │
+│  🔒 Password Policy (aplicada a toda a conta)                │
 │  ├── Mínimo 10 caracteres                                    │
 │  ├── Letras maiúsculas, minúsculas, números e símbolos       │
 │  ├── Expiração em 90 dias                                    │
 │  └── Bloqueio das últimas 5 senhas                           │
 │                                                              │
-│  ┌──────────────┐  ┌───────────────┐  ┌───────────────┐     │
-│  │  S3-Support  │  │  EC2-Support  │  │   EC2-Admin   │     │
-│  │              │  │               │  │               │     │
-│  │  📋 Managed  │  │  📋 Managed   │  │  📝 Inline    │     │
-│  │  S3          │  │  EC2          │  │  EC2 Describe │     │
-│  │  ReadOnly    │  │  ReadOnly     │  │  Start / Stop │     │
-│  │              │  │               │  │               │     │
-│  │  👤 user-1   │  │  👤 user-2    │  │  👤 user-3    │     │
-│  └──────────────┘  └───────────────┘  └───────────────┘     │
+│  ┌──────────────┐  ┌───────────────┐  ┌───────────────┐      │
+│  │  S3-Support  │  │  EC2-Support  │  │   EC2-Admin   │      │
+│  │              │  │               │  │               │      │
+│  │  📋 Managed  │  │  📋 Managed   │  │  📝 Inline   │      │
+│  │  S3          │  │  EC2          │  │  EC2 Describe │      │
+│  │  ReadOnly    │  │  ReadOnly     │  │  Start / Stop │      │
+│  │              │  │               │  │               │      │
+│  │  👤 user-1   │  │  👤 user-2    │  │  👤 user-3    │      │
+│  └──────────────┘  └───────────────┘  └───────────────┘      │
 └──────────────────────────────────────────────────────────────┘
 ```
 
