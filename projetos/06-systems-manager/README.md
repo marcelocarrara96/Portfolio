@@ -1,4 +1,5 @@
-# 🖥️ Projeto 06 — Gerenciamento de Instâncias com AWS Systems Manager
+# 🖥️ Projeto 06 — Gerenciamento de Instâncias com AWS Systems Manager<img width="746" height="386" alt="widget-online" src="https://github.com/user-attachments/assets/2c59c452-71b2-4a56-bf69-6e755570929f" />
+
 
 ![AWS](https://img.shields.io/badge/AWS-Systems_Manager-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![SSM](https://img.shields.io/badge/SSM-Run_Command-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
@@ -14,6 +15,8 @@ Utilizar o AWS Systems Manager para gerenciar instâncias EC2 sem necessidade de
 ---
 
 ## 🛠️ Serviços utilizados
+
+![Uploading widget-online.png…]()
 
 | Serviço | Função |
 |---|---|
@@ -125,7 +128,15 @@ aws ec2 describe-instances
 
 ## 📸 Evidências
 
-> 
+Run command - AWS Systems Manager:
+<img width="1616" height="429" alt="runcommand2-systemsmanager" src="https://github.com/user-attachments/assets/1d509093-561f-49b4-9fe7-c04911d0087a" />
+
+Widget primário ---> Widget atualizado:
+<img width="1094" height="391" alt="widgetatualizado-online" src="https://github.com/user-attachments/assets/5d84220d-da4f-41e0-82b7-80ff2b919b4b" />
+
+Acesso na instancia com Systems Manager:
+<img width="1533" height="720" alt="acesso-instancia-systemsmanager" src="https://github.com/user-attachments/assets/c753ad40-1b0b-474f-92ec-25d182545c71" />
+
 
 ---
 
