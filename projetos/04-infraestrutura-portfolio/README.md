@@ -61,4 +61,12 @@ Visualizar Evidências: [Clique aqui para abrir a pasta de evidências](./eviden
 
 
 ---
-**Marcelo Carrara** *Aspiring Solutions Architect | AWS re/Start Cloud Practicioner*
+
+<div align="center">
+
+**Marcelo Carrara** · Aspiring Solutions Architect · Paraná, Brasil
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcelo-carrara-tech/)
+[![GitHub](https://img.shields.io/badge/GitHub-FF9900?style=flat&logo=github&logoColor=white)](https://github.com/marcelocarrara96)
+
+</div>
