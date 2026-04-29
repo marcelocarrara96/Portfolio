@@ -4,7 +4,7 @@
 ![Status](https://img.shields.io/badge/Em_construção-🔨-yellow?style=for-the-badge)
 
 > Documentação prática da minha jornada de transição para Cloud Computing,
-> com foco em me tornar **Arquiteto de Soluções AWS**.
+> com foco em me tornar **Cloud Analyst/Suporte NOC AWS**.
 
 ---
 
