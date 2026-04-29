@@ -110,8 +110,13 @@ Todo statement de uma política IAM é composto por três elementos principais:
 
 ## 📸 Evidências
 
+Password policy:
 <img width="1306" height="436" alt="password-policy" src="https://github.com/user-attachments/assets/cf957f39-4a99-4988-b4e7-f83283976309" />
+
+Users IAM:
 <img width="1178" height="353" alt="users-iam" src="https://github.com/user-attachments/assets/e6870631-7e84-4df6-99f0-ecb15eff3a25" />
+
+Add users to groups:
 <img width="1661" height="412" alt="add-user-groups" src="https://github.com/user-attachments/assets/b5813cc2-514a-4539-91bc-15913794c571" />
 
 ---
