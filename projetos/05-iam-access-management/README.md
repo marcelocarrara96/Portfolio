@@ -1,4 +1,4 @@
-# 🔐 Projeto 02 — Gerenciamento de Identidade e Acesso com AWS IAM
+# 🔐 Projeto 05 — Gerenciamento de Identidade e Acesso com AWS IAM
 
 ![AWS](https://img.shields.io/badge/AWS-IAM-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Security](https://img.shields.io/badge/Segurança-Políticas_de_Acesso-1A9C3E?style=for-the-badge&logo=springsecurity&logoColor=white)
