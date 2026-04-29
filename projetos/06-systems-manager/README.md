@@ -16,7 +16,6 @@ Utilizar o AWS Systems Manager para gerenciar instâncias EC2 sem necessidade de
 
 ## 🛠️ Serviços utilizados
 
-![Uploading widget-online.png…]()
 
 | Serviço | Função |
 |---|---|
@@ -133,6 +132,7 @@ Run command - AWS Systems Manager:
 
 Widget primário ---> Widget atualizado:
 <img width="746" height="386" alt="widget-online" src="https://github.com/user-attachments/assets/2c59c452-71b2-4a56-bf69-6e755570929f" />
+
 <img width="1094" height="391" alt="widgetatualizado-online" src="https://github.com/user-attachments/assets/5d84220d-da4f-41e0-82b7-80ff2b919b4b" />
 
 Acesso na instancia com Systems Manager:
