@@ -130,4 +130,15 @@ Internet
 
 ---
 
-*Projeto realizado no AWS Sandbox — Abril 2026*
+<div align="center">
+
+**Marcelo Carrara** · Aspiring Solutions Architect · Paraná, Brasil
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcelo-carrara-tech/)
+[![GitHub](https://img.shields.io/badge/GitHub-FF9900?style=flat&logo=github&logoColor=white)](https://github.com/marcelocarrara96)
+
+</div>
+
+
+*Projeto realizado — Abril 2026*
+
