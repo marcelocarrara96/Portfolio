@@ -109,6 +109,14 @@ Internet
 
 ## 📸 Evidências
 
+Target group:
+<img width="1638" height="433" alt="lab-target-group" src="https://github.com/user-attachments/assets/1ce839a5-7251-463e-8eea-0c2338b65929" />
+
+Elastic Load Balancer:
+<img width="1643" height="745" alt="elastic-load-balancer" src="https://github.com/user-attachments/assets/80d4cf5f-ee05-4448-856a-88bcdd2aa4dc" />
+
+AutoScaling group:
+<img width="1863" height="295" alt="Lab-AutoScaling-group" src="https://github.com/user-attachments/assets/9ad63bfc-401c-4a47-a974-555206ef65f1" />
 
 
 ---
