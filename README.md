@@ -19,6 +19,7 @@
 | 05 | [IAM Access Management](./projetos/05-iam-access-management/README.md) | IAM · Users · Groups · Policies · Password Policy | ✅ Concluído |
 | 06 | [Gerenciamento de Instâncias com AWS Systems Manager](./projetos/06-systems-manager/README.md) | SSM · Fleet Manager · Run Command · Parameter Store · Session Manager | ✅ Concluído |
 | 07 | [Banco de Dados Gerenciado com Amazon RDS](./projetos/07-rds-database/README.md) | RDS · MySQL · Multi-AZ · VPC · Security Group | ✅ Concluído |
+| 08 | [Alta Disponibilidade com Auto Scaling e Load Balancer](./projetos/08-Auto-Scaling-Load-Balancer/README.md) | EC2 · AMI · ALB · Auto Scaling · Launch Template | ✅ Concluído |
 
 > Novos projetos serão adicionados conforme o avanço nos estudos.
 
