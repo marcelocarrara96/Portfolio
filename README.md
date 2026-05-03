@@ -7,6 +7,8 @@
 > com foco em me tornar **Cloud Analyst/Suporte NOC AWS**.
 
 ---
+Todos os projetos neste repositório estão sob a licença MIT,
+salvo indicação em contrário dentro de suas respectivas pastas.
 
 ## 🗂️ Projetos
 
