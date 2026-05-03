@@ -144,6 +144,14 @@ Configurar failover routing no Amazon Route 53 para uma aplicação web, garanti
 
 ## 📸 Evidências
 
+Primary healthcheck:
+<img width="1607" height="595" alt="primary-healthcheck" src="https://github.com/user-attachments/assets/5c95470c-bc25-471e-91fb-622393a11c90" />
+
+Hosted Zones record:
+<img width="1215" height="698" alt="hostedzones-record" src="https://github.com/user-attachments/assets/e5768205-bae0-41ce-8cdc-0d534e466468" />
+
+Healthcheck unhealthy:
+<img width="1303" height="319" alt="healthcheck-unhealthy" src="https://github.com/user-attachments/assets/3e9652b7-6e8d-4b83-b4a8-893914ad1633" />
 
 
 ---
