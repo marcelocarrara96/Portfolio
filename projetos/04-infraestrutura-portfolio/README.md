@@ -10,7 +10,7 @@
 
 ## 🎯 Objetivo
 
-Provisionar 100% de forma automatizada uma infraestrutura em nuvem segura, escalável e otimizada para custos (Free Tier) utilizando AWS CloudFormation, sustentando um ambiente completo de Cloud Data Analytics com separação de camadas de rede, computação, dados e observabilidade.
+Provisionar 100% de forma automatizada uma infraestrutura em nuvem segura, escalável e otimizada para custos (Free Tier) utilizando AWS CloudFormation, sustentando um ambiente completo de Cloud com separação de camadas de rede, computação, dados e observabilidade.
 
 ---
 
@@ -113,6 +113,17 @@ aws s3 cp perfil.jpg s3://nome-do-seu-bucket/
 
 ## 📸 Evidências
 
+CloudFormation - YAML:
+<img width="1060" height="844" alt="template-cloudformation-yaml" src="https://github.com/user-attachments/assets/36bc154f-6e96-4da4-aa52-c888b4e332c4" />
+
+CloudFormation - Console:
+<img width="1550" height="777" alt="cloudformation-criado" src="https://github.com/user-attachments/assets/a0c246f9-a1dd-4c1e-ab5e-0598d8e8201e" />
+
+Métrica do CloudWatch:
+<img width="1541" height="797" alt="metric-cloudwatch" src="https://github.com/user-attachments/assets/86d83704-ea27-4601-b5e4-7e87e36cc799" />
+
+Portfólio online pelo S3:
+<img width="1909" height="1025" alt="siteestatico-online" src="https://github.com/user-attachments/assets/74eeab4c-f39d-40fb-9a08-e91e0ae58678" />
 
 
 ---
