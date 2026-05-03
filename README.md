@@ -52,3 +52,7 @@
 ---
 
 *Atualizado em Abril 2026*
+
+## Licença
+
+Este repositório está licenciado sob a MIT License.
