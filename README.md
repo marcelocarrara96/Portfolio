@@ -3,12 +3,12 @@
 ![AWS](https://img.shields.io/badge/AWS-Cloud-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Status](https://img.shields.io/badge/Em_construção-🔨-yellow?style=for-the-badge)
 
-> Documentação prática da minha jornada de transição para Cloud Computing,
+> Documentação prática da minha transição para Cloud Computing
 > com foco em me tornar **Cloud Analyst/Suporte NOC AWS**.
 
 ---
-Todos os projetos neste repositório estão sob a licença MIT,
-salvo indicação em contrário dentro de suas respectivas pastas.
+Todos os projetos deste repositório estão licenciados sob a MIT License,
+salvo indicação específica em contrário.
 
 ## 🗂️ Projetos
 
@@ -17,7 +17,7 @@ salvo indicação em contrário dentro de suas respectivas pastas.
 | 01 | [Servidor Web com Amazon EC2](./projetos/01-ec2-servidor-web/README.md) | EC2 · EBS · Security Group | ✅ Concluído |
 | 02 | [VPC, Servidor Web e Acesso SSH](./projetos/02-vpc-serverweb-ssh-access/README.md) | VPC · IGW · Public Subnet · SSH | ✅ Concluído |
 | 03 | [Infraestrutura AWS via CLI-PowerShell](./projetos/03-infraestrutura-aws-cli/README.md) | VPC · EC2 · IGW · Route Tables · Security Groups · CLI | ✅ Concluído |
-| 04 | [Infraestrutura Unificada e Portfólio no S3](./projetos/04-infraestrutura-portfolio) | CloudFormation · S3 · VPC · RDS · CloudWatch | ✅ Concluído |
+| 04 | [Infraestrutura Unificada e Portfólio no S3](./projetos/04-infraestrutura-portfolio/README.md) | CloudFormation · S3 · VPC · RDS · CloudWatch | ✅ Concluído |
 | 05 | [IAM Access Management](./projetos/05-iam-access-management/README.md) | IAM · Users · Groups · Policies · Password Policy | ✅ Concluído |
 | 06 | [Gerenciamento de Instâncias com AWS Systems Manager](./projetos/06-systems-manager/README.md) | SSM · Fleet Manager · Run Command · Parameter Store · Session Manager | ✅ Concluído |
 | 07 | [Banco de Dados Gerenciado com Amazon RDS](./projetos/07-rds-database/README.md) | RDS · MySQL · Multi-AZ · VPC · Security Group | ✅ Concluído |
