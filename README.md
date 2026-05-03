@@ -22,6 +22,7 @@ salvo indicação específica em contrário.
 | 06 | [Gerenciamento de Instâncias com AWS Systems Manager](./projetos/06-systems-manager/README.md) | SSM · Fleet Manager · Run Command · Parameter Store · Session Manager | ✅ Concluído |
 | 07 | [Banco de Dados Gerenciado com Amazon RDS](./projetos/07-rds-database/README.md) | RDS · MySQL · Multi-AZ · VPC · Security Group | ✅ Concluído |
 | 08 | [Alta Disponibilidade com Auto Scaling e Load Balancer](./projetos/08-Auto-Scaling-Load-Balancer/README.md) | EC2 · AMI · ALB · Auto Scaling · Launch Template | ✅ Concluído |
+| 09 | [Alta Disponibilidade com Failover Routing no Route 53](./projetos/09-route53-failover/README.md) | Route 53 · Health Checks · Failover · SNS · EC2 | ✅ Concluído |
 
 > Novos projetos serão adicionados conforme o avanço nos estudos.
 
