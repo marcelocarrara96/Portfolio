@@ -1,4 +1,4 @@
-# 💰 Projeto 10 — FinOps na AWS: Monitoramento e Governança de Custos
+# 💰 Projeto 10, FinOps na AWS: Monitoramento e Governança de Custos
 
 ![AWS](https://img.shields.io/badge/AWS-Cost_Explorer-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Lambda](https://img.shields.io/badge/AWS-Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
