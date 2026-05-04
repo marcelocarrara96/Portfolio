@@ -45,7 +45,9 @@ salvo indicação específica em contrário.
 ![VPC](https://img.shields.io/badge/AWS-VPC-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Auto Scaling](https://img.shields.io/badge/AWS-Auto_Scaling-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Route 53](https://img.shields.io/badge/AWS-Route_53-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-
+![AWS](https://img.shields.io/badge/AWS-Athena-232F3E?style=for-the-badge&logo=amazonathena&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-EventBridge-FF9900?style=for-the-badge&logo=amazoneventbridge&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-Budgets-FF4F8B?style=for-the-badge&logo=amazonaws&logoColor=white)
 
 ---
 
