@@ -12,17 +12,17 @@ salvo indicação específica em contrário.
 
 ## 🗂️ Projetos
 
-| # | Projeto | Serviços | Status |
-|---|---|---|---|
-| 01 | [Servidor Web com Amazon EC2](./projetos/01-ec2-servidor-web/README.md) | EC2 · EBS · Security Group | ✅ Concluído |
-| 02 | [VPC, Servidor Web e Acesso SSH](./projetos/02-vpc-serverweb-ssh-access/README.md) | VPC · IGW · Public Subnet · SSH | ✅ Concluído |
-| 03 | [Infraestrutura AWS via CLI-PowerShell](./projetos/03-infraestrutura-aws-cli/README.md) | VPC · EC2 · IGW · Route Tables · Security Groups · CLI | ✅ Concluído |
-| 04 | [Infraestrutura Unificada e Portfólio no S3](./projetos/04-infraestrutura-portfolio/README.md) | CloudFormation · S3 · VPC · RDS · CloudWatch | ✅ Concluído |
-| 05 | [IAM Access Management](./projetos/05-iam-access-management/README.md) | IAM · Users · Groups · Policies · Password Policy | ✅ Concluído |
-| 06 | [Gerenciamento de Instâncias com AWS Systems Manager](./projetos/06-systems-manager/README.md) | SSM · Fleet Manager · Run Command · Parameter Store · Session Manager | ✅ Concluído |
-| 07 | [Banco de Dados Gerenciado com Amazon RDS](./projetos/07-rds-database/README.md) | RDS · MySQL · Multi-AZ · VPC · Security Group | ✅ Concluído |
-| 08 | [Alta Disponibilidade com Auto Scaling e Load Balancer](./projetos/08-Auto-Scaling-Load-Balancer/README.md) | EC2 · AMI · ALB · Auto Scaling · Launch Template | ✅ Concluído |
-| 09 | [Alta Disponibilidade com Failover Routing no Route 53](./projetos/09-route53-failover/README.md) | Route 53 · Health Checks · Failover · SNS · EC2 | ✅ Concluído |
+| # | Projeto | Serviços | Status | Origem |
+|---|---|---|---|---|
+| 01 | [Servidor Web com Amazon EC2](./projetos/01-ec2-servidor-web/README.md) | EC2 · EBS · Security Group | ✅ Concluído | Escola da Nuvem |
+| 02 | [VPC, Servidor Web e Acesso SSH](./projetos/02-vpc-serverweb-ssh-access/README.md) | VPC · IGW · Public Subnet · SSH | ✅ Concluído | Escola da Nuvem |
+| 03 | [Infraestrutura AWS via CLI-PowerShell](./projetos/03-infraestrutura-aws-cli/README.md) | VPC · EC2 · IGW · Route Tables · Security Groups · CLI | ✅ Concluído | 🚀 Iniciativa própria |
+| 04 | [Infraestrutura Unificada e Portfólio no S3](./projetos/04-infraestrutura-portfolio/README.md) | CloudFormation · S3 · VPC · RDS · CloudWatch | ✅ Concluído | 🚀 Iniciativa própria |
+| 05 | [IAM Access Management](./projetos/05-iam-access-management/README.md) | IAM · Users · Groups · Policies · Password Policy | ✅ Concluído | Escola da Nuvem |
+| 06 | [Gerenciamento de Instâncias com AWS Systems Manager](./projetos/06-systems-manager/README.md) | SSM · Fleet Manager · Run Command · Parameter Store · Session Manager | ✅ Concluído | Escola da Nuvem |
+| 07 | [Banco de Dados Gerenciado com Amazon RDS](./projetos/07-rds-database/README.md) | RDS · MySQL · Multi-AZ · VPC · Security Group | ✅ Concluído | Escola da Nuvem |
+| 08 | [Alta Disponibilidade com Auto Scaling e Load Balancer](./projetos/08-Auto-Scaling-Load-Balancer/README.md) | EC2 · AMI · ALB · Auto Scaling · Launch Template | ✅ Concluído | Escola da Nuvem |
+| 09 | [Alta Disponibilidade com Failover Routing no Route 53](./projetos/09-route53-failover/README.md) | Route 53 · Health Checks · Failover · SNS · EC2 | ✅ Concluído | Escola da Nuvem |
 
 > Novos projetos serão adicionados conforme o avanço nos estudos.
 
