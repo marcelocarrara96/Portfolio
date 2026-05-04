@@ -240,23 +240,23 @@ ORDER BY collected_at DESC;
 Tags EC2:
 <img width="1794" height="855" alt="ec2-instance-tags" src="https://github.com/user-attachments/assets/2299f760-e595-4e1f-b4da-7212b9fe4622" />
 
+Alarmes do CloudWatch:
+<img width="1900" height="574" alt="cloudwatch-alarms" src="https://github.com/user-attachments/assets/f042fdcc-f23e-4c65-ab0d-f3fd97bec08d" />
+
 Query successful:
 <img width="1867" height="659" alt="query-sucessful" src="https://github.com/user-attachments/assets/8211c318-45ed-44a0-a40c-cf14a9588460" />
-
-Test Lambda code:
-<img width="730" height="329" alt="test-succeded-lambda" src="https://github.com/user-attachments/assets/4bc8f558-ad84-4d5a-8c5f-a359cd5d9133" />
 
 Lambda code:
 <img width="1603" height="802" alt="lambda-code-" src="https://github.com/user-attachments/assets/c4dd035e-7d00-49ad-bf68-37ea02308193" />
 
-Alerta Lambda para instancias sem tag:
-<img width="331" height="344" alt="alerta-lambda-instancia-semtag" src="https://github.com/user-attachments/assets/4c63dde5-eff1-4d17-801a-cb4da8dbce15" />
+Test Lambda code:
+<img width="730" height="329" alt="test-succeded-lambda" src="https://github.com/user-attachments/assets/4bc8f558-ad84-4d5a-8c5f-a359cd5d9133" />
 
 Função Lambda instancias EC2:
 <img width="1604" height="850" alt="lambda-function-ec2instances" src="https://github.com/user-attachments/assets/20ad0377-98c8-4621-8914-01d2febd0c23" />
 
-Alarmes do CloudWatch:
-<img width="1900" height="574" alt="cloudwatch-alarms" src="https://github.com/user-attachments/assets/f042fdcc-f23e-4c65-ab0d-f3fd97bec08d" />
+Alerta Lambda para instancias sem tag:
+<img width="331" height="344" alt="alerta-lambda-instancia-semtag" src="https://github.com/user-attachments/assets/4c63dde5-eff1-4d17-801a-cb4da8dbce15" />
 
 Lambda desliga instancia sem tag:
 <img width="1005" height="233" alt="lambda-desligou-instancia-semtag" src="https://github.com/user-attachments/assets/7c9fdd7a-7dc1-4134-a8ed-8782f9eaaf96" />
