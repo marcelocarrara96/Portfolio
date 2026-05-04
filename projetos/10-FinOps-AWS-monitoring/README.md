@@ -10,7 +10,7 @@
 
 ## 🎯 Objetivo
 
-Implementar uma pipeline completa de FinOps na AWS, coletando dados de custo automaticamente via Lambda, armazenando no S3, consultando com Athena, configurando alertas de budget e automatizando governança de instâncias EC2 sem tags — tudo dentro do Free Tier.
+Implementar uma pipeline completa de FinOps na AWS, coletando dados de custo automaticamente via Lambda, armazenando no S3, consultando com Athena, configurando alertas de budget e automatizando governança de instâncias EC2 sem tags, tudo dentro do Free Tier.
 
 ---
 
