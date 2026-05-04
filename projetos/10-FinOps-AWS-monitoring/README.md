@@ -91,7 +91,7 @@ Implementar uma pipeline completa de FinOps na AWS, coletando dados de custo aut
 | 3 | Consulta dos dados com Amazon Athena | 20–30 min |
 | 4 | Alertas de custo com AWS Budgets | 10 min |
 | 5 | Monitoramento com CloudWatch (billing + CPU ociosa) | 15 min |
-| 6 ✦ | Automação — Lambda para parar instâncias sem tag | 45 min |
+| 6 ✦ | Automação Lambda para parar instâncias sem tag | 45 min |
 
 ---
 
@@ -108,7 +108,7 @@ CostCenter  = Laboratorio
 
 ---
 
-## ⚙️ Lambda 1 — finops-cost-collector
+## ⚙️ Lambda 1, finops-cost-collector
 
 Coleta dados diários do Cost Explorer e salva como JSON no S3.
 
@@ -221,7 +221,7 @@ ORDER BY collected_at DESC;
 
 ## 🔔 Configuração de Alertas
 
-**AWS Budgets — thresholds múltiplos:**
+**AWS Budgets, thresholds múltiplos:**
 
 | Threshold | Ação |
 |---|---|
