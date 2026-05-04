@@ -23,7 +23,7 @@ salvo indicação específica em contrário.
 | 07 | [Banco de Dados Gerenciado com Amazon RDS](./projetos/07-rds-database/README.md) | RDS · MySQL · Multi-AZ · VPC · Security Group | ✅ Concluído | Escola da Nuvem |
 | 08 | [Alta Disponibilidade com Auto Scaling e Load Balancer](./projetos/08-Auto-Scaling-Load-Balancer/README.md) | EC2 · AMI · ALB · Auto Scaling · Launch Template | ✅ Concluído | Escola da Nuvem |
 | 09 | [Alta Disponibilidade com Failover Routing no Route 53](./projetos/09-route53-failover/README.md) | Route 53 · Health Checks · Failover · SNS · EC2 | ✅ Concluído | Escola da Nuvem |
-| 10 | FinOps na AWS: Monitoramento e Governança de Custos | Cost Explorer · Lambda · Athena · Budgets · FinOps | ✅ Concluído | Escola da Nuvem |[cite: 1]
+| 10 | [FinOps na AWS: Monitoramento e Governança de Custos](./projetos/10-finops/README.md) | Cost Explorer · Lambda · Athena · Budgets · FinOps | ✅ Concluído | 🚀 Iniciativa própria |
 
 > Novos projetos serão adicionados conforme o avanço nos estudos.
 
