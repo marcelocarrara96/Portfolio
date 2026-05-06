@@ -24,6 +24,7 @@ salvo indicação específica em contrário.
 | 08 | [Alta Disponibilidade com Auto Scaling e Load Balancer](./projetos/08-Auto-Scaling-Load-Balancer/README.md) | EC2 · AMI · ALB · Auto Scaling · Launch Template | ✅ Concluído | Escola da Nuvem |
 | 09 | [Alta Disponibilidade com Failover Routing no Route 53](./projetos/09-route53-failover/README.md) | Route 53 · Health Checks · Failover · SNS · EC2 | ✅ Concluído | Escola da Nuvem |
 | 10 | [FinOps na AWS: Monitoramento e Governança de Custos](./projetos/10-FinOps-AWS-monitoring/README.md) | Cost Explorer · Lambda · Athena · Budgets · FinOps | ✅ Concluído | 🚀 Iniciativa própria |
+| 11 | [Armazenamento Persistente com Amazon EBS](./projetos/11-EBS-volumes-snapshots/README.md) | EBS · EC2 · Snapshots · Linux · S3 | ✅ Concluído | Escola da Nuvem |
 
 > Novos projetos serão adicionados conforme o avanço nos estudos.
 
