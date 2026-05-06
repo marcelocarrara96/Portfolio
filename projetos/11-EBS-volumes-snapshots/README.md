@@ -132,6 +132,17 @@ ls /mnt/data-store2/file.txt
 
 ## 📸 Evidências
 
+EBS volume created:
+<img width="720" height="276" alt="ebs-volume-created" src="https://github.com/user-attachments/assets/81a88812-b942-41da-ab42-458d0660ce35" />
+
+View storage and create file:
+<img width="625" height="554" alt="viewstorage-createfile" src="https://github.com/user-attachments/assets/5d0c809f-786b-435a-a4d5-4390b3ad4861" />
+
+Snapshot created:
+<img width="731" height="93" alt="snapshot-created" src="https://github.com/user-attachments/assets/b1d07c89-fd44-4bdb-b340-3b76bd79c164" />
+
+New directory, mount and verify:
+<img width="624" height="101" alt="newdirectory-mount-verify" src="https://github.com/user-attachments/assets/199854b6-0be4-41c0-931a-81cb7095f619" />
 
 
 ---
