@@ -118,7 +118,20 @@ aws ec2 describe-instances \
 
 ## 📸 Evidências
 
+AWS Configure and remove MariaDB:
+<img width="657" height="418" alt="awsconfigure-remove-mariadb" src="https://github.com/user-attachments/assets/8ae75c34-9309-4a35-a5d9-145054ce53ed" />
 
+Describe and stop instance:
+<img width="656" height="489" alt="describe-and-stop-instance" src="https://github.com/user-attachments/assets/b94c2535-945b-4f07-acb8-a9e24cb29316" />
+
+Change instance size:
+<img width="653" height="326" alt="change-t3micro-start-instance" src="https://github.com/user-attachments/assets/aa5db074-243b-4f25-8a98-158a8a493843" />
+
+Pricing calculator estimate MariaDB + EC2:
+<img width="1874" height="771" alt="pricing-calculator-mariadb-ec2" src="https://github.com/user-attachments/assets/83004870-2763-4393-b5ff-7fd3d67ab642" />
+
+Estimated updated após trocar o tamanho da instancia EC2:
+<img width="1891" height="771" alt="estimated-updated" src="https://github.com/user-attachments/assets/bc30fd4a-c951-45b2-b314-384706fce160" />
 
 ---
 
