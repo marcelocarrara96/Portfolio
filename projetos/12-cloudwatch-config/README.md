@@ -161,7 +161,23 @@ Implementar monitoramento completo de uma instância EC2 com o agente CloudWatch
 
 ## 📸 Evidências
 
+Arquitetura do projeto:
+<img width="760" height="243" alt="arquitetura-projeto" src="https://github.com/user-attachments/assets/873c0c11-5cc1-45a0-beaa-909d1935d044" />
 
+Agente do CloudWatch instalado:
+<img width="1598" height="479" alt="clouwatch-agent-installed" src="https://github.com/user-attachments/assets/6969c815-1c48-4a8e-a003-4967f59e1f3b" />
+
+Logs do CloudWatch:
+<img width="1643" height="375" alt="logs-cloudwatch" src="https://github.com/user-attachments/assets/cf27c2d7-2eae-4a89-9171-f62a5e8c3c3b" />
+
+Red alarm CloudWatch:
+<img width="1616" height="620" alt="red-alarm-cloudwatch" src="https://github.com/user-attachments/assets/0cd0b69e-af4f-44a5-92b6-37be0e2f67e5" />
+
+Email alarm CloudWatch:
+<img width="958" height="725" alt="email-alarm-cloudwatch" src="https://github.com/user-attachments/assets/020e8948-f5cc-4b74-a035-096f8c3b6305" />
+
+Rules do AWS Config:
+<img width="1308" height="384" alt="awsconfig-rules" src="https://github.com/user-attachments/assets/1434f7d2-bf31-46cb-9fbf-b557bb1a73b9" />
 
 ---
 
