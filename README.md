@@ -26,6 +26,7 @@ salvo indicação específica em contrário.
 | 10 | [FinOps na AWS: Monitoramento e Governança de Custos](./projetos/10-FinOps-AWS-monitoring/README.md) | Cost Explorer · Lambda · Athena · Budgets · FinOps | ✅ Concluído | 🚀 Iniciativa própria |
 | 11 | [Armazenamento Persistente com Amazon EBS](./projetos/11-EBS-volumes-snapshots/README.md) | EBS · EC2 · Snapshots · Linux · S3 | ✅ Concluído | Escola da Nuvem |
 | 12 | [Monitoramento e Conformidade com CloudWatch e AWS Config](./projetos/12-cloudwatch-config/README.md) | CloudWatch · SSM · SNS · AWS Config · EC2 | ✅ Concluído | Escola da Nuvem |
+| 13 | [Gerenciamento de Recursos por Tags com AWS CLI](./projetos/13-tags-cli/README.md) | EC2 · AWS CLI · Bash · JMESPath · Tags | ✅ Concluído | Escola da Nuvem |
 
 > Novos projetos serão adicionados conforme o avanço nos estudos.
 
