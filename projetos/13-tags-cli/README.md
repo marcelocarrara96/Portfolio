@@ -157,7 +157,17 @@ aws ec2 create-tags --resources $ids --tags 'Key=Version,Value=1.1'
 
 ## 📸 Evidências
 
+Instances per tag:
+<img width="494" height="556" alt="instances-per-tags" src="https://github.com/user-attachments/assets/d3481f76-65c9-4140-aa58-929de7a31568" />
 
+Stopping instances:
+<img width="817" height="447" alt="stopping-instances" src="https://github.com/user-attachments/assets/5d4f759d-dd5c-4f7c-95a1-2ac10919dbd5" />
+
+Instances stopped:
+<img width="900" height="87" alt="instances-stopped" src="https://github.com/user-attachments/assets/d7f4bfa1-b9e8-4229-9731-64e50e7a571c" />
+
+Stopping instances without tags:
+<img width="891" height="287" alt="stopping-instances-without-tags" src="https://github.com/user-attachments/assets/f62e9481-9aed-444e-b2a3-1c9afa3212eb" />
 
 ---
 
