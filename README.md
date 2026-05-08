@@ -28,6 +28,7 @@ salvo indicação específica em contrário.
 | 12 | [Monitoramento e Conformidade com CloudWatch e AWS Config](./projetos/12-cloudwatch-config/README.md) | CloudWatch · SSM · SNS · AWS Config · EC2 | ✅ Concluído | Escola da Nuvem |
 | 13 | [Gerenciamento de Recursos por Tags com AWS CLI](./projetos/13-tags-cli/README.md) | EC2 · AWS CLI · Bash · JMESPath · Tags | ✅ Concluído | Escola da Nuvem |
 | 14 | [Otimização de Recursos e Estimativa de Custos](./projetos/14-otimizacao-custos-PricingCalculator/README.md) | EC2 · RDS · EBS · AWS CLI · Pricing Calculator | ✅ Concluído | Escola da Nuvem |
+| 15 | [Investigação de Segurança com AWS CloudTrail e Athena](./projetos/15-cloudtrail-security/README.md) | CloudTrail · Athena · IAM · EC2 · S3 · KMS | ✅ Concluído | Escola da Nuvem |
 
 > Novos projetos serão adicionados conforme o avanço nos estudos.
 
