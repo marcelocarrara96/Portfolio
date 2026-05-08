@@ -169,7 +169,20 @@ sudo mv Coffee-and-Pastries.backup Coffee-and-Pastries.jpg
 
 ## 📸 Evidências
 
+Site com imagem alterada:
+<img width="995" height="892" alt="site-alterado" src="https://github.com/user-attachments/assets/29b9451d-c27d-4c11-a85c-94603538b7e2" />
 
+Grupo de segurança com porta 22 (SSH) liberada para o público:
+<img width="1629" height="351" alt="porta22-ssh-liberada-publico" src="https://github.com/user-attachments/assets/5d4a7697-9a84-400e-8c9f-7baba9f9c56e" />
+
+Command "who":
+<img width="656" height="410" alt="who-command-ssh" src="https://github.com/user-attachments/assets/e8109331-5aab-4644-9941-569f725e0880" />
+
+Site com imagem corrigida:
+<img width="991" height="798" alt="website-fixed" src="https://github.com/user-attachments/assets/e18399df-a94a-44c5-97ad-9b6338c42aa3" />
+
+Remove wrong IAM user:
+<img width="599" height="470" alt="remove-user-from-IAM" src="https://github.com/user-attachments/assets/5f5de810-3b30-4293-863a-d4895aa57d6c" />
 
 ---
 
