@@ -54,6 +54,7 @@ salvo indicação específica em contrário.
 ![AWS](https://img.shields.io/badge/AWS-EventBridge-FF9900?style=for-the-badge&logo=amazoneventbridge&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-Budgets-FF4F8B?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![AWS Config](https://img.shields.io/badge/AWS-Config-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![CloudTrail](https://img.shields.io/badge/AWS-CloudTrail-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 
 ---
 
