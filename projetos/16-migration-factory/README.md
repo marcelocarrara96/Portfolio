@@ -1,4 +1,4 @@
-# 🏭 Projeto 16 — AWS Cloud Migration Factory
+<img width="1536" height="1024" alt="diagrama-resumido" src="https://github.com/user-attachments/assets/bdcafa30-6dee-4ff6-b75c-7ba4bdf2deab" /># 🏭 Projeto 16 - AWS Cloud Migration Factory
 
 ![AWS](https://img.shields.io/badge/AWS-CloudFormation-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Lambda](https://img.shields.io/badge/AWS-Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
@@ -10,7 +10,7 @@
 
 ## 🎯 Objetivo
 
-Implantar e explorar a solução **AWS Cloud Migration Factory** — uma arquitetura serverless que automatiza e orquestra pipelines de migração em escala para a AWS, utilizando CloudFormation para provisionamento completo da infraestrutura e integrando serviços como API Gateway, Lambda, DynamoDB, Cognito, SNS e CloudWatch.
+Implantar e explorar a solução **AWS Cloud Migration Factory** - uma arquitetura serverless que automatiza e orquestra pipelines de migração em escala para a AWS, utilizando CloudFormation para provisionamento completo da infraestrutura e integrando serviços como API Gateway, Lambda, DynamoDB, Cognito, SNS e CloudWatch.
 
 ---
 
@@ -90,8 +90,6 @@ Implantar e explorar a solução **AWS Cloud Migration Factory** — uma arquite
 - Status final: **CREATE_COMPLETE**
 - **130 recursos** provisionados, incluindo API Gateway, Lambda, DynamoDB, Cognito, SQS, SNS e CloudWatch
 
-> _(inserir prints da aba Resources e Events)_
-
 ---
 
 ### 2. Abordagens de deploy testadas
@@ -101,7 +99,7 @@ Implantar e explorar a solução **AWS Cloud Migration Factory** — uma arquite
 | Role customizada | Criação manual da role `CFN-MigrationFactory-Role` com permissões específicas (CloudFront, API Gateway, SQS etc.) | Requer ajuste fino de permissões |
 | Role automática | CloudFormation gera as permissões automaticamente sem role prévia | Mais simples, deploy bem-sucedido |
 
-> **Conclusão:** Demonstrei entendimento das duas formas de trabalhar — com role customizada (mais seguro e controlado) e com role automática (mais simples e rápido para laboratório).
+> **Conclusão:** Demonstrei entendimento das duas formas de trabalhar - com role customizada (mais seguro e controlado) e com role automática (mais simples e rápido para laboratório).
 
 > **Observação:** O Migration Factory cria dezenas de roles IAM automaticamente, o que é esperado e removido no delete da stack.
 
@@ -112,8 +110,6 @@ Implantar e explorar a solução **AWS Cloud Migration Factory** — uma arquite
 - O endpoint da aplicação foi disponibilizado via **CloudFront**
 - Interface web acessível com tela de login do Migration Factory
 
-> _(inserir print da aba Outputs e da tela de login)_
-
 ---
 
 ### 4. Exploração dos recursos
@@ -121,8 +117,6 @@ Implantar e explorar a solução **AWS Cloud Migration Factory** — uma arquite
 - Interface web acessível via CloudFront ✅
 - Login não concluído por ausência de credenciais configuradas no Cognito
 - Recursos explorados via console: CloudFormation, API Gateway, DynamoDB, IAM Roles
-
-> _(inserir prints + diagrama)_
 
 ---
 
@@ -158,7 +152,26 @@ Implantar e explorar a solução **AWS Cloud Migration Factory** — uma arquite
 
 ## 📸 Evidências
 
+Diagrama da arquitetura:
+<img width="1536" height="1024" alt="diagrama-resumido" src="https://github.com/user-attachments/assets/0d2a8cad-4006-4448-93b1-d1b86eb06970" />
 
+Tags no CloudFormation:
+<img width="1294" height="398" alt="tags-cloudformation" src="https://github.com/user-attachments/assets/e2efac3a-0f18-4cc9-bfda-85e884a621f6" />
+
+Nova IAM Role criada:
+<img width="1908" height="802" alt="newrole-policy" src="https://github.com/user-attachments/assets/f302efd2-3332-489e-a489-d0e460bf740c" />
+
+CloudFormation create in progress:
+<img width="1910" height="886" alt="cloudformation-create-in-progress" src="https://github.com/user-attachments/assets/f0cfe984-a7d5-4611-82d8-e070d1f88a53" />
+
+CloudFormation create complete:
+<img width="1901" height="645" alt="cloudformation-complete" src="https://github.com/user-attachments/assets/009db316-ca9a-43a1-b93c-89ed1c623135" />
+
+Endpoint online e funcionando nessa URL:
+<img width="1797" height="546" alt="url-online-api-endpoint" src="https://github.com/user-attachments/assets/01abdc7a-ed5f-4675-b5c8-edb6cff92320" />
+
+Não deletou tudo então tive que ir manualmente nos serviços:
+<img width="1439" height="665" alt="delete-skipped-failed" src="https://github.com/user-attachments/assets/227ac909-4b8e-483f-9132-21d86c1006d8" />
 
 ---
 
