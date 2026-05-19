@@ -29,6 +29,7 @@ salvo indicação específica em contrário.
 | 13 | [Gerenciamento de Recursos por Tags com AWS CLI](./projetos/13-tags-cli/README.md) | EC2 · AWS CLI · Bash · JMESPath · Tags | ✅ Concluído | Escola da Nuvem |
 | 14 | [Otimização de Recursos e Estimativa de Custos](./projetos/14-otimizacao-custos-PricingCalculator/README.md) | EC2 · RDS · EBS · AWS CLI · Pricing Calculator | ✅ Concluído | Escola da Nuvem |
 | 15 | [Investigação de Segurança com AWS CloudTrail e Athena](./projetos/15-cloudtrail-security/README.md) | CloudTrail · Athena · IAM · EC2 · S3 · KMS | ✅ Concluído | Escola da Nuvem |
+| 16 | [AWS Cloud Migration Factory](./projetos/16-migration-factory/README.md) | CloudFormation · Lambda · API Gateway · DynamoDB · Cognito · SNS | 🔄 Em Andamento | 🚀 Iniciativa própria |
 
 > Novos projetos serão adicionados conforme o avanço nos estudos.
 
@@ -55,6 +56,8 @@ salvo indicação específica em contrário.
 ![AWS](https://img.shields.io/badge/AWS-Budgets-FF4F8B?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![AWS Config](https://img.shields.io/badge/AWS-Config-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![CloudTrail](https://img.shields.io/badge/AWS-CloudTrail-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Cognito](https://img.shields.io/badge/AWS-Cognito-DD344C?style=for-the-badge&logo=amazonaws&logoColor=white)
+![DynamoDB](https://img.shields.io/badge/AWS-DynamoDB-527FFF?style=for-the-badge&logo=amazondynamodb&logoColor=white)
 
 ---
 
