@@ -1,4 +1,4 @@
-<img width="1536" height="1024" alt="diagrama-resumido" src="https://github.com/user-attachments/assets/bdcafa30-6dee-4ff6-b75c-7ba4bdf2deab" /># 🏭 Projeto 16 - AWS Cloud Migration Factory
+# 🏭 Projeto 16 - AWS Cloud Migration Factory
 
 ![AWS](https://img.shields.io/badge/AWS-CloudFormation-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Lambda](https://img.shields.io/badge/AWS-Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
