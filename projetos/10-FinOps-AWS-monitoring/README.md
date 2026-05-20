@@ -272,14 +272,14 @@ Lambda desliga instancia sem tag:
 
 ## 💡 Aprendizados
 
-- ✅ Conceito de **FinOps**: visibilidade, otimização e governança de custos em nuvem
-- ✅ Uso do **Cost Explorer** para análise de custos por serviço e tag
-- ✅ Criação de **pipeline serverless** com Lambda + EventBridge + S3
-- ✅ Consulta de dados com **Amazon Athena** usando SQL sobre arquivos JSON no S3
-- ✅ Configuração de **AWS Budgets** com alertas proativos em múltiplos thresholds
-- ✅ Monitoramento de billing e instâncias ociosas com **CloudWatch**
-- ✅ Automação de governança com **Lambda** parando instâncias sem tags obrigatórias
-- ✅ Importância das **tags** como base para rastreabilidade de custos por projeto
+- ✅ FinOps não é só cortar custo. Antes desse lab eu associava FinOps a "gastar menos". Na prática, percebi que o trabalho real é visibilidade primeiro você não pode otimizar o que não consegue enxergar. A pipeline de coleta foi o alicerce de tudo.
+- ✅ O Cost Explorer é poderoso, mas cego sem tags. Consegui consultar custos por serviço facilmente, mas filtrar por projeto só funcionou depois que apliquei as tags corretamente na EC2. Sem tagging consistente, o Cost Explorer mostra números sem contexto é como ter um extrato bancário sem descrição de compra.
+- ✅ Separar responsabilidades entre Lambdas faz diferença. Meu primeiro instinto era colocar coleta e governança na mesma função. Mantê-las separadas me obrigou a pensar em permissões IAM distintas, agendamentos diferentes e falhas independentes um princípio que se aplica a qualquer arquitetura serverless.
+- ✅ Athena consulta JSON no S3 e isso é mais poderoso do que parece. Não precisei de banco de dados. Os JSONs salvos pelo Lambda viraram uma tabela consultável com SQL. Isso mudou minha visão sobre onde dados precisam "viver" para serem úteis.
+- ✅ Alertas em múltiplos thresholds evitam surpresa. Configurar apenas 100% do budget é tarde demais. Os alertas em 50% e 80% me fizeram pensar em custo como algo progressivo, não binário uma mudança de mentalidade que carrego pra qualquer projeto cloud.
+- ✅ A Lambda de governança me ensinou sobre risco de automação. A função para instâncias sem tag funciona mas durante os testes percebi que ela pararia qualquer instância, incluindo uma crítica esquecida sem tag. Em produção, isso exige uma lista de exclusão ou aprovação manual antes do stop. Automação sem salvaguarda é risco disfarçado de eficiência.
+- ✅ CloudWatch de billing precisa ser ativado manualmente. Perdi tempo tentando entender por que o alarme de billing não aparecia. A causa era simples: o monitoramento de billing no CloudWatch fica desativado por padrão na conta AWS e precisa ser habilitado nas preferências de billing. Um detalhe pequeno que custa horas se você não sabe.
+- ✅ Tag é cultura, não configuração. No começo tratei as tags como um passo técnico do lab. No fim entendi que tag sem processo de enforcement é tag que some. A Lambda de governança existe exatamente porque humanos não aplicam tags de forma consistente e isso precisa ser automatizado para funcionar em escala.
 
 ---
 
