@@ -8,6 +8,11 @@
 
 ---
 
+## Problema:
+Equipes que operam na AWS sem visibilidade de custos descobrem gastos inesperados apenas na fatura do fim do mês - sem saber qual serviço, projeto ou responsável gerou o custo. O desafio era criar uma pipeline automatizada que coletasse, organizasse e alertasse sobre custos em tempo real, eliminando a dependência de revisão manual.
+
+---
+
 ## 🎯 Objetivo
 
 Implementar uma pipeline completa de FinOps na AWS, coletando dados de custo automaticamente via Lambda, armazenando no S3, consultando com Athena, configurando alertas de budget e automatizando governança de instâncias EC2 sem tags, tudo dentro do Free Tier.
