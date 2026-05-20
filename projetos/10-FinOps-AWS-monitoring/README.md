@@ -9,7 +9,7 @@
 ---
 
 ## Problema:
-Equipes que operam na AWS sem visibilidade de custos descobrem gastos inesperados apenas na fatura do fim do mês - sem saber qual serviço, projeto ou responsável gerou o custo. O desafio era criar uma pipeline automatizada que coletasse, organizasse e alertasse sobre custos em tempo real, eliminando a dependência de revisão manual.
+Equipes que operam na AWS sem visibilidade de custos descobrem gastos inesperados apenas na fatura do fim do mês sem saber qual serviço, projeto ou responsável gerou o custo. O desafio era criar uma pipeline automatizada que coletasse, organizasse e alertasse sobre custos em tempo real, eliminando a dependência de revisão manual.
 
 ---
 
