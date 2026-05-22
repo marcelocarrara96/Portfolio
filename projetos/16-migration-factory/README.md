@@ -206,9 +206,9 @@ O travamento de renderização na v5.0.1 foi identificado, isolado e documentado
 
 ## 🔗 Referências
 
-- [AWS Cloud Migration Factory — Implementation Guide](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/solution-overview.html)
+- [AWS Cloud Migration Factory, Implementation Guide](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/solution-overview.html)
 - [AWS Application Migration Service (MGN)](https://docs.aws.amazon.com/mgn/)
-- [Amazon Cognito — Admin Set User Password](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminSetUserPassword.html)
+- [Amazon Cognito, Admin Set User Password](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminSetUserPassword.html)
 - [CloudFormation Nested Stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html)
 
 ---
