@@ -1,4 +1,4 @@
-# 🏭 Projeto 16 — AWS Cloud Migration Factory: Deploy, Exploração e Descomissionamento
+# 🏭 Projeto 16 - AWS Cloud Migration Factory: Deploy, Exploração e Descomissionamento
 
 ![AWS](https://img.shields.io/badge/AWS-CloudFormation-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Lambda](https://img.shields.io/badge/AWS-Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
@@ -18,13 +18,13 @@ O desafio era: como orquestrar uma migração corporativa completa de forma auto
 
 ## 🎯 Objetivo
 
-Implantar, explorar e descomissionar com segurança a solução **AWS Cloud Migration Factory** — uma arquitetura serverless enterprise que automatiza pipelines de migração em escala, integrando CloudFormation, Lambda, DynamoDB, Cognito, API Gateway e CloudShell para gerenciar o ciclo de vida completo de uma migração AWS.
+Implantar, explorar e descomissionar com segurança a solução **AWS Cloud Migration Factory**, uma arquitetura serverless enterprise que automatiza pipelines de migração em escala, integrando CloudFormation, Lambda, DynamoDB, Cognito, API Gateway e CloudShell para gerenciar o ciclo de vida completo de uma migração AWS.
 
 ---
 
 ## 🏗️ Solução
 
-A solução foi implantada via CloudFormation com 130+ recursos em Nested Stacks, acessada via interface web protegida por Cognito, explorada em profundidade via painel administrativo e descomissionada com processo de FinOps aplicado — garantindo custo zero ao final do laboratório.
+A solução foi implantada via CloudFormation com 130+ recursos em Nested Stacks, acessada via interface web protegida por Cognito, explorada em profundidade via painel administrativo e descomissionada com processo de FinOps aplicado, garantindo custo zero ao final do laboratório.
 
 ```
                         Usuários
@@ -117,7 +117,7 @@ A solução foi implantada via CloudFormation com 130+ recursos em Nested Stacks
 | Parâmetro | Valor | Justificativa |
 |---|---|---|
 | WPM (Wave Planning Manager) | `true` | Gerenciamento visual das ondas de migração |
-| Deploy Bedrock Guardrail | `false` | Controle de custos — foco na infra base |
+| Deploy Bedrock Guardrail | `false` | Controle de custos, foco na infra base |
 | Replatform EC2 | `true` | Suporte a estratégias de replataforma automatizada |
 | Deployment Type | `Default (Public)` | Acesso via internet protegido por Cognito |
 | Additional Identity Provider | `false` | Simplicidade para ambiente de laboratório |
@@ -140,7 +140,7 @@ aws cognito-idp admin-set-user-password \
   --permanent
 ```
 
-### Descomissionamento seguro — processo FinOps
+### Descomissionamento seguro, processo FinOps
 
 ```
 1. Identificar todos os buckets S3 vinculados à stack
@@ -164,7 +164,7 @@ aws cognito-idp admin-set-user-password \
 
 ## ✅ Resultado
 
-Stack com 130+ recursos provisionada, interface web acessível e autenticada via Cognito, schema NoSQL do DynamoDB explorado em profundidade, bug de renderização identificado e documentado, e descomissionamento completo executado com processo FinOps — sem recursos órfãos e sem custos residuais.
+Stack com 130+ recursos provisionada, interface web acessível e autenticada via Cognito, schema NoSQL do DynamoDB explorado em profundidade, bug de renderização identificado e documentado, e descomissionamento completo executado com processo FinOps, sem recursos órfãos e sem custos residuais.
 
 ---
 
@@ -188,19 +188,19 @@ Para garantir a transparência técnica e a rastreabilidade de cada etapa descri
 ## 💡 Aprendizados
 
 **Nested Stacks organizam o que um template único não consegue**
-Com 130+ recursos, o CloudFormation organiza a stack em componentes isolados — rede, segurança, computação e banco de dados — cada um com seu próprio ciclo de vida. Isso permite atualizar partes da arquitetura sem recriar tudo.
+Com 130+ recursos, o CloudFormation organiza a stack em componentes isolados, rede, segurança, computação e banco de dados, cada um com seu próprio ciclo de vida. Isso permite atualizar partes da arquitetura sem recriar tudo.
 
 **Cognito pode ser gerenciado programaticamente quando o front falha**
-A interface web não permitia login por ausência de senha permanente no Cognito. A solução foi usar o CloudShell para forçar a senha via CLI — mostrando que operações administrativas de identidade podem (e devem) ser feitas de forma programática em produção.
+A interface web não permitia login por ausência de senha permanente no Cognito. A solução foi usar o CloudShell para forçar a senha via CLI, mostrando que operações administrativas de identidade podem (e devem) ser feitas de forma programática em produção.
 
 **DynamoDB sem schema rígido é uma vantagem em migração**
 O schema flexível do DynamoDB permite que administradores adicionem atributos dinâmicos ao inventário de servidores sem migrations de banco. Isso é essencial em cenários de migração onde cada cliente tem metadados diferentes.
 
 **Descomissionamento é parte do projeto, não o fim**
-O encerramento anterior da stack deixou buckets S3 com arquivos residuais, gerando custos. O processo correto — esvaziar buckets antes do delete — garantiu remoção completa de todos os recursos. Em ambientes corporativos, isso é a diferença entre um lab limpo e uma fatura surpresa.
+O encerramento anterior da stack deixou buckets S3 com arquivos residuais, gerando custos. O processo correto, esvaziar buckets antes do delete, garantiu remoção completa de todos os recursos. Em ambientes corporativos, isso é a diferença entre um lab limpo e uma fatura surpresa.
 
 **Documentar bugs é tão profissional quanto documentar sucessos**
-O travamento de renderização na v5.0.1 foi identificado, isolado e documentado como limitação de interface — não como falha do operador. Saber distinguir erro de configuração de bug de produto é uma habilidade real de suporte e operações.
+O travamento de renderização na v5.0.1 foi identificado, isolado e documentado como limitação de interface, não como falha do operador. Saber distinguir erro de configuração de bug de produto é uma habilidade real de suporte e operações.
 
 ---
 
