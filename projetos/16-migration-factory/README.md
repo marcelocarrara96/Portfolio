@@ -1,73 +1,70 @@
-# 🏭 Projeto 16 - AWS Cloud Migration Factory
+# 🏭 Projeto 16 — AWS Cloud Migration Factory: Deploy, Exploração e Descomissionamento
 
 ![AWS](https://img.shields.io/badge/AWS-CloudFormation-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Lambda](https://img.shields.io/badge/AWS-Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
 ![Cognito](https://img.shields.io/badge/AWS-Cognito-DD344C?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![DynamoDB](https://img.shields.io/badge/AWS-DynamoDB-527FFF?style=for-the-badge&logo=amazondynamodb&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Em_Andamento-yellow?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Concluído-1A9C3E?style=for-the-badge)
+
+---
+
+## ⚠️ Problema
+
+Migrações em escala para a nuvem são complexas: envolvem dezenas de servidores, múltiplas ondas de migração, diferentes estratégias (Rehost, Replatform) e times que precisam de visibilidade centralizada do progresso. Gerenciar esse processo manualmente gera erros, retrabalho e custos imprevistos.
+
+O desafio era: como orquestrar uma migração corporativa completa de forma automatizada, rastreável e com governança integrada desde o deploy até o descomissionamento da infraestrutura de laboratório?
 
 ---
 
 ## 🎯 Objetivo
 
-Implantar e explorar a solução **AWS Cloud Migration Factory** - uma arquitetura serverless que automatiza e orquestra pipelines de migração em escala para a AWS, utilizando CloudFormation para provisionamento completo da infraestrutura e integrando serviços como API Gateway, Lambda, DynamoDB, Cognito, SNS e CloudWatch.
+Implantar, explorar e descomissionar com segurança a solução **AWS Cloud Migration Factory** — uma arquitetura serverless enterprise que automatiza pipelines de migração em escala, integrando CloudFormation, Lambda, DynamoDB, Cognito, API Gateway e CloudShell para gerenciar o ciclo de vida completo de uma migração AWS.
 
 ---
 
-## 🛠️ Serviços utilizados
+## 🏗️ Solução
 
-| Serviço | Função |
-|---|---|
-| AWS CloudFormation | Provisionamento de toda a stack (130+ recursos) via template único |
-| Amazon API Gateway | Interface de comunicação entre o frontend e os Lambdas |
-| AWS Lambda | Orquestração serverless dos pipelines de migração |
-| Amazon DynamoDB | Armazenamento dos dados de migração e configurações |
-| Amazon Cognito | Autenticação e controle de acesso à interface web |
-| Amazon CloudFront | Distribuição da interface web da solução |
-| Amazon SQS | Fila de mensagens para processamento assíncrono |
-| Amazon SNS | Notificações por e-mail sobre eventos de migração |
-| Amazon CloudWatch | Logs e monitoramento dos Lambdas e API Gateway |
-| AWS IAM | Roles e permissões geradas automaticamente pela stack |
-
----
-
-## 🏗️ Arquitetura da solução
+A solução foi implantada via CloudFormation com 130+ recursos em Nested Stacks, acessada via interface web protegida por Cognito, explorada em profundidade via painel administrativo e descomissionada com processo de FinOps aplicado — garantindo custo zero ao final do laboratório.
 
 ```
                         Usuários
                             │
                             ▼
-                  ┌──────────────────┐
-                  │   CloudFront     │
-                  │  Interface Web   │
-                  │  Migration Fct.  │
-                  └────────┬─────────┘
-                           │
-                           ▼
-                  ┌──────────────────┐
-                  │   Amazon Cognito │
-                  │   Autenticação   │
-                  └────────┬─────────┘
-                           │
-                           ▼
-                  ┌──────────────────┐
-                  │   API Gateway    │
-                  └────────┬─────────┘
-                           │
-              ┌────────────┼────────────┐
-              ▼            ▼            ▼
-        ┌──────────┐ ┌──────────┐ ┌──────────┐
-        │  Lambda  │ │  Lambda  │ │  Lambda  │
-        │ Pipeline │ │  Tasks   │ │  Scripts │
-        └────┬─────┘ └────┬─────┘ └────┬─────┘
-             │             │            │
-             ▼             ▼            ▼
-        ┌──────────────────────────────────┐
-        │          DynamoDB                │
-        │  (pipelines, tasks, servers)     │
-        └──────────────────────────────────┘
-             │                      │
-             ▼                      ▼
+                  ┌──────────────────────┐
+                  │      CloudFront      │
+                  │   Interface Web      │
+                  │  Migration Factory   │
+                  │      v5.0.1          │
+                  └──────────┬───────────┘
+                             │
+                             ▼
+                  ┌──────────────────────┐
+                  │   Amazon Cognito     │
+                  │   Autenticação       │
+                  │   (bypass via CLI)   │
+                  └──────────┬───────────┘
+                             │
+                             ▼
+                  ┌──────────────────────┐
+                  │    API Gateway       │
+                  └──────────┬───────────┘
+                             │
+           ┌─────────────────┼─────────────────┐
+           ▼                 ▼                 ▼
+     ┌──────────┐      ┌──────────┐      ┌──────────┐
+     │  Lambda  │      │  Lambda  │      │  Lambda  │
+     │ Pipeline │      │  Tasks   │      │  Scripts │
+     └────┬─────┘      └────┬─────┘      └────┬─────┘
+          │                 │                  │
+          ▼                 ▼                  ▼
+     ┌────────────────────────────────────────────┐
+     │                 DynamoDB                   │
+     │   Schema flexível: waves, apps, servers    │
+     │   app_id, wave_ids, multivalue-relationship│
+     └───────────────────┬────────────────────────┘
+                         │
+              ┌──────────┴──────────┐
+              ▼                     ▼
         ┌──────────┐         ┌──────────────┐
         │   SQS    │         │  CloudWatch  │
         │  Queue   │         │     Logs     │
@@ -80,109 +77,130 @@ Implantar e explorar a solução **AWS Cloud Migration Factory** - uma arquitetu
         └──────────┘
 ```
 
+### Etapas de implementação
+
+1. Deploy da stack `CloudMigrationFactory-MarceloCarrara` via CloudFormation com parâmetros customizados
+2. Aplicação de **tags de governança** na stack (Project, Owner, Environment)
+3. Bypass de autenticação do **Cognito** via AWS CloudShell (`admin-set-user-password`)
+4. Acesso ao **dashboard operacional** do Migration Factory (v5.0.1)
+5. Exploração do **schema NoSQL** do DynamoDB via aba Attributes do painel admin
+6. Cadastro de Wave e Application via formulários da interface web
+7. Identificação e documentação de **bug de renderização** na v5.0.1
+8. **Descomissionamento seguro**: esvaziamento manual dos buckets S3 + delete da stack
+9. Validação de remoção completa dos 130+ recursos sem recursos órfãos
+
 ---
 
-## 📋 Etapas realizadas
+## 🛠️ Ferramentas
 
-### 1. Deploy da Stack
-
-- Stack criada via CloudFormation: `CloudMigrationFactory-MarceloCarrara`
-- Status final: **CREATE_COMPLETE**
-- **130 recursos** provisionados, incluindo API Gateway, Lambda, DynamoDB, Cognito, SQS, SNS e CloudWatch
+| Serviço | Função |
+|---|---|
+| AWS CloudFormation | Provisionamento de 130+ recursos via Nested Stacks |
+| Amazon API Gateway | Interface entre frontend e Lambdas de orquestração |
+| AWS Lambda | Orquestração serverless dos pipelines de migração |
+| Amazon DynamoDB | Schema NoSQL flexível para inventário de migração |
+| Amazon Cognito | Autenticação da interface web (bypass via CloudShell) |
+| Amazon CloudFront | Distribuição da interface web da solução |
+| Amazon SQS | Fila de mensagens para processamento assíncrono |
+| Amazon SNS | Notificações por e-mail sobre eventos de migração |
+| Amazon CloudWatch | Logs e monitoramento dos Lambdas e API Gateway |
+| Amazon S3 | Armazenamento de scripts e logs de migração |
+| AWS CloudShell | Execução de comandos CLI diretamente no console AWS |
+| AWS IAM | Dezenas de roles geradas automaticamente pela stack |
 
 ---
 
-### 2. Abordagens de deploy testadas
+## ⚙️ Detalhes técnicos
 
-| Abordagem | Descrição | Resultado |
+### Parâmetros de deploy configurados
+
+| Parâmetro | Valor | Justificativa |
 |---|---|---|
-| Role customizada | Criação manual da role `CFN-MigrationFactory-Role` com permissões específicas (CloudFront, API Gateway, SQS etc.) | Requer ajuste fino de permissões |
-| Role automática | CloudFormation gera as permissões automaticamente sem role prévia | Mais simples, deploy bem-sucedido |
+| WPM (Wave Planning Manager) | `true` | Gerenciamento visual das ondas de migração |
+| Deploy Bedrock Guardrail | `false` | Controle de custos — foco na infra base |
+| Replatform EC2 | `true` | Suporte a estratégias de replataforma automatizada |
+| Deployment Type | `Default (Public)` | Acesso via internet protegido por Cognito |
+| Additional Identity Provider | `false` | Simplicidade para ambiente de laboratório |
 
-> **Conclusão:** Demonstrei entendimento das duas formas de trabalhar - com role customizada (mais seguro e controlado) e com role automática (mais simples e rápido para laboratório).
+### Tags de governança aplicadas
 
-> **Observação:** O Migration Factory cria dezenas de roles IAM automaticamente, o que é esperado e removido no delete da stack.
+```
+Project:     CloudMigrationFactory
+Owner:       MarceloCarrara
+Environment: Test
+```
 
----
+### Bypass de autenticação Cognito via CloudShell
 
-### 3. Outputs e Endpoint
+```bash
+aws cognito-idp admin-set-user-password \
+  --user-pool-id <UserPoolId> \
+  --username <username> \
+  --password <NewPassword> \
+  --permanent
+```
 
-- O endpoint da aplicação foi disponibilizado via **CloudFront**
-- Interface web acessível com tela de login do Migration Factory
+### Descomissionamento seguro — processo FinOps
 
----
-
-### 4. Exploração dos recursos
-
-- Interface web acessível via CloudFront ✅
-- Login não concluído por ausência de credenciais configuradas no Cognito
-- Recursos explorados via console: CloudFormation, API Gateway, DynamoDB, IAM Roles
-
----
-
-### 5. Testes planejados *(próxima etapa)*
-
-| Teste | Descrição | Status |
-|---|---|---|
-| Rehost | Instalar agente MGN em EC2 e simular lift-and-shift | ⬜ Planejado |
-| Replatform | Recriar EC2 via CloudFormation com ajustes | ⬜ Planejado |
-| SNS | Validar notificações por e-mail nos eventos de migração | ⬜ Planejado |
-| CloudWatch | Validar logs de Lambda e API Gateway | ⬜ Planejado |
-
----
-
-### 6. Limitações desta versão
-
-- Login no Cognito não concluído → pipeline de migração não executado
-- Rehost e Replatform não realizados nesta etapa
-- Documentação focada no deploy da stack e exploração dos recursos provisionados
-
-> **Observação:** Alguns recursos não foram removidos automaticamente após o delete da stack e precisaram ser excluídos manualmente.
-
----
-
-### 7. Próximos passos
-
-- Configurar usuário no Cognito com senha permanente
-- Validar criação de pipeline de migração pela interface web
-- Executar testes de Rehost e Replatform
-- Documentar logs no CloudWatch e notificações via SNS
+```
+1. Identificar todos os buckets S3 vinculados à stack
+        │
+        ▼
+2. Esvaziar manualmente cada bucket (Empty)
+   → Remove objetos, logs e scripts de migração
+        │
+        ▼
+3. Executar Delete Stack na stack raiz do CloudFormation
+        │
+        ▼
+4. CloudFormation remove 130+ recursos de forma encadeada
+   → IAM Roles, Lambdas, DynamoDB, Cognito, API Gateway
+        │
+        ▼
+5. Validar: zero recursos órfãos, custo zero pós-lab ✅
+```
 
 ---
 
-## 📸 Evidências
+## ✅ Resultado
 
-Diagrama da arquitetura:
-<img width="1536" height="1024" alt="diagrama-resumido" src="https://github.com/user-attachments/assets/0d2a8cad-4006-4448-93b1-d1b86eb06970" />
+Stack com 130+ recursos provisionada, interface web acessível e autenticada via Cognito, schema NoSQL do DynamoDB explorado em profundidade, bug de renderização identificado e documentado, e descomissionamento completo executado com processo FinOps — sem recursos órfãos e sem custos residuais.
 
-Tags no CloudFormation:
-<img width="1294" height="398" alt="tags-cloudformation" src="https://github.com/user-attachments/assets/e2efac3a-0f18-4cc9-bfda-85e884a621f6" />
+---
 
-Nova IAM Role criada:
-<img width="1908" height="802" alt="newrole-policy" src="https://github.com/user-attachments/assets/f302efd2-3332-489e-a489-d0e460bf740c" />
+## 📸 Evidências do Projeto
 
-CloudFormation create in progress:
-<img width="1910" height="886" alt="cloudformation-create-in-progress" src="https://github.com/user-attachments/assets/f0cfe984-a7d5-4611-82d8-e070d1f88a53" />
+Para garantir a transparência técnica e a rastreabilidade de cada etapa descrita, todas as capturas de tela e logs gerados durante o ciclo de vida deste laboratório foram centralizados.
 
-CloudFormation create complete:
-<img width="1901" height="645" alt="cloudformation-complete" src="https://github.com/user-attachments/assets/009db316-ca9a-43a1-b93c-89ed1c623135" />
+👉 [Clique aqui para acessar a pasta com todas as evidências visuais do projeto](./evidencias)
 
-Endpoint online e funcionando nessa URL:
-<img width="1797" height="546" alt="url-online-api-endpoint" src="https://github.com/user-attachments/assets/01abdc7a-ed5f-4675-b5c8-edb6cff92320" />
-
-Não deletou tudo então tive que ir manualmente nos serviços:
-<img width="1439" height="665" alt="delete-skipped-failed" src="https://github.com/user-attachments/assets/227ac909-4b8e-483f-9132-21d86c1006d8" />
+### Mapeamento dos Arquivos na Pasta:
+- **`01-parametros-deploy.png`**: Parâmetros iniciais de deploy e chaves do CloudFormation.
+- **`02-tags-governanca.png`**: Aplicação de tags de propriedade (`Owner: MarceloCarrara`).
+- **`03-stack-complete.png`**: Infraestrutura e *Nested Stacks* em status `CREATE_COMPLETE`.
+- **`04-cognito-bypass.png`**: Execução do comando de redefinição de senha via AWS CLI no CloudShell.
+- **`05-dashboard-factory.png`**: Dashboard principal do AWS Cloud Migration Factory (v5.0.1) operando.
+- **`06-nosql-attributes.png`**: Análise e mapeamento do esquema dinâmico e tabelas de atributos no DynamoDB.
+- **`07-s3-finops-clean.png`**: Comprovação de esvaziamento manual dos buckets antes do decommissioning.
 
 ---
 
 ## 💡 Aprendizados
 
-- ✅ Como implantar uma **solução AWS completa** via CloudFormation com 130+ recursos
-- ✅ Diferença entre deploy com **role customizada** (controle granular) e **role automática** (simplicidade)
-- ✅ Arquitetura **serverless orientada a eventos** com API Gateway + Lambda + DynamoDB
-- ✅ Uso do **Amazon Cognito** como camada de autenticação em aplicações web
-- ✅ Como o **Migration Factory** orquestra pipelines de migração em escala (Rehost e Replatform)
-- ✅ Gestão de recursos residuais após delete de stack no CloudFormation
+**Nested Stacks organizam o que um template único não consegue**
+Com 130+ recursos, o CloudFormation organiza a stack em componentes isolados — rede, segurança, computação e banco de dados — cada um com seu próprio ciclo de vida. Isso permite atualizar partes da arquitetura sem recriar tudo.
+
+**Cognito pode ser gerenciado programaticamente quando o front falha**
+A interface web não permitia login por ausência de senha permanente no Cognito. A solução foi usar o CloudShell para forçar a senha via CLI — mostrando que operações administrativas de identidade podem (e devem) ser feitas de forma programática em produção.
+
+**DynamoDB sem schema rígido é uma vantagem em migração**
+O schema flexível do DynamoDB permite que administradores adicionem atributos dinâmicos ao inventário de servidores sem migrations de banco. Isso é essencial em cenários de migração onde cada cliente tem metadados diferentes.
+
+**Descomissionamento é parte do projeto, não o fim**
+O encerramento anterior da stack deixou buckets S3 com arquivos residuais, gerando custos. O processo correto — esvaziar buckets antes do delete — garantiu remoção completa de todos os recursos. Em ambientes corporativos, isso é a diferença entre um lab limpo e uma fatura surpresa.
+
+**Documentar bugs é tão profissional quanto documentar sucessos**
+O travamento de renderização na v5.0.1 foi identificado, isolado e documentado como limitação de interface — não como falha do operador. Saber distinguir erro de configuração de bug de produto é uma habilidade real de suporte e operações.
 
 ---
 
@@ -190,8 +208,8 @@ Não deletou tudo então tive que ir manualmente nos serviços:
 
 - [AWS Cloud Migration Factory — Implementation Guide](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/solution-overview.html)
 - [AWS Application Migration Service (MGN)](https://docs.aws.amazon.com/mgn/)
-- [Amazon Cognito](https://docs.aws.amazon.com/cognito/)
-- [AWS CloudFormation](https://docs.aws.amazon.com/cloudformation/)
+- [Amazon Cognito — Admin Set User Password](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminSetUserPassword.html)
+- [CloudFormation Nested Stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html)
 
 ---
 
