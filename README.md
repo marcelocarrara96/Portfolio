@@ -4,7 +4,7 @@
 ![Status](https://img.shields.io/badge/Em_construção-🔨-yellow?style=for-the-badge)
 
 > Documentação prática da minha transição para Cloud Computing
-> com foco em me tornar **Cloud Analyst/Suporte NOC AWS**.
+> com foco em me tornar **Cloud Analyst Jr AWS**.
 
 ---
 Todos os projetos deste repositório estão licenciados sob a MIT License,
@@ -63,14 +63,14 @@ salvo indicação específica em contrário.
 
 <div align="center">
 
-**Marcelo Carrara** · Transitioning into Cloud | Cloud Analyst Jr & NOC Support · Paraná, Brazil
+**Marcelo Carrara** · Cloud Practitioner | Cloud Analyst Jr · Paraná, Brazil
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcelo-carrara-tech/)
 [![GitHub](https://img.shields.io/badge/GitHub-FF9900?style=flat&logo=github&logoColor=white)](https://github.com/marcelocarrara96)
 
 </div>
 
-*Atualizado em Abril 2026*
+*Atualizado em Maio 2026*
 
 ## Licença
 
