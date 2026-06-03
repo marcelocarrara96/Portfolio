@@ -1,4 +1,4 @@
-# 📊 Projeto 17 — FinOps + Resource Optimization Center
+# 📊 Projeto 17 - FinOps + Resource Optimization Center
 
 ![AWS](https://img.shields.io/badge/AWS-Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
 ![CloudWatch](https://img.shields.io/badge/AWS-CloudWatch-FF4F8B?style=for-the-badge&logo=amazonaws&logoColor=white)
@@ -12,13 +12,13 @@
 
 Equipes que operam na AWS sem visibilidade de recursos descobrem problemas tarde demais: instâncias ociosas consumindo custo, recursos sem tags impossibilitando rastreabilidade financeira e nenhum mecanismo de alerta proativo para desvios operacionais.
 
-O desafio era: como construir um sistema de análise contínua que identificasse automaticamente instâncias subutilizadas, recursos fora de conformidade de tags e variações de custo — e notificasse a equipe antes que o problema virasse fatura?
+O desafio era: como construir um sistema de análise contínua que identificasse automaticamente instâncias subutilizadas, recursos fora de conformidade de tags e variações de custo e notificasse a equipe antes que o problema virasse fatura?
 
 ---
 
 ## 🎯 Objetivo
 
-Construir um **Resource Optimization Center** serverless na AWS, integrando CloudWatch para monitoramento de métricas, três funções Lambda especializadas para análise de recursos, custos e conformidade de tags, SNS para alertas por e-mail e CloudWatch Logs para investigação de falhas — simulando a rotina real de um analista de operações cloud.
+Construir um **Resource Optimization Center** serverless na AWS, integrando CloudWatch para monitoramento de métricas, três funções Lambda especializadas para análise de recursos, custos e conformidade de tags, SNS para alertas por e-mail e CloudWatch Logs para investigação de falhas, simulando a rotina real(supostamente) de um analista de operações cloud.
 
 ---
 
@@ -76,7 +76,7 @@ CloudWatch Logs (investigação e troubleshooting)
 6. Criação da Role IAM `lambda-resource-analyzer-role` com permissões específicas
 7. Deploy das 3 funções Lambda com agendamento via **EventBridge**
 8. Testes: remoção de tag, ARN inválido para simular falha, nova EC2 sem tags
-9. Investigação de logs no **CloudWatch Logs** — análise de erros e execuções
+9. Investigação de logs no **CloudWatch Logs** - análise de erros e execuções
 
 ---
 
@@ -97,7 +97,7 @@ CloudWatch Logs (investigação e troubleshooting)
 
 ## ⚙️ Detalhes técnicos
 
-### Lambda 1 — resource-analyzer
+### Lambda 1- resource-analyzer
 
 Lista instâncias EC2 em execução, verifica tags obrigatórias, mede CPU média da última hora e envia relatório diário via SNS.
 
@@ -154,7 +154,7 @@ def lambda_handler(event, context):
 
 ---
 
-### Lambda 2 — cost-analyzer
+### Lambda 2- cost-analyzer
 
 Coleta dados de custo do Cost Explorer por serviço e salva como JSON no S3.
 
@@ -189,7 +189,7 @@ def lambda_handler(event, context):
 
 ---
 
-### Lambda 3 — tag-compliance-checker
+### Lambda 3- tag-compliance-checker
 
 Verifica conformidade de tags em todas as instâncias e envia alerta via SNS para as não conformes.
 
@@ -225,11 +225,11 @@ def lambda_handler(event, context):
     return {'non_compliant': non_compliant, 'total': len(non_compliant)}
 ```
 
-**Agendamento:** `cron(0 20 ? * MON-FRI *)` — dias úteis às 20h UTC
+**Agendamento:** `cron(0 20 ? * MON-FRI *)` - dias úteis às 20h UTC
 
 ---
 
-### CloudWatch Dashboard — 4 Widgets
+### CloudWatch Dashboard - 4 Widgets
 
 | Widget | Métrica | Instância |
 |---|---|---|
@@ -249,21 +249,24 @@ def lambda_handler(event, context):
 
 ## 🧪 Testes realizados
 
-**Teste 1 — Remoção de tag**
+**Teste 1- Remoção de tag**
 - Removida a tag `Owner` da instância `web-dev`
 - Lambda `tag-compliance-checker` executada manualmente
 - Alerta recebido por e-mail com a instância e a tag ausente
+<img width="1463" height="693" alt="teste-mostrando-instancia-semtags" src="https://github.com/user-attachments/assets/74458054-22d4-497e-8943-91ee4fd887bf" />
 
-**Teste 2 — CPU ociosa**
+**Teste 2- CPU ociosa**
 - `legacy-server` mantida em idle sem carga
 - Alarme `CPU-Baixa-legacy-server` disparado após período configurado
 - Notificação SNS recebida por e-mail
+<img width="1676" height="628" alt="alarm-legacy-cpu" src="https://github.com/user-attachments/assets/4381ca25-680c-4f12-aa06-bb3f0a0d4a3e" />
 
-**Teste 3 — Nova instância sem tags**
+**Teste 3- Nova instância sem tags**
 - EC2 `test-no-tags` criada sem nenhuma tag
 - Lambda detectou e incluiu no relatório de conformidade
+<img width="1467" height="669" alt="nova-ec2-semtags-detectado" src="https://github.com/user-attachments/assets/0ab4c5a8-8671-4e88-b75d-0a7d1410447a" />
 
-**Teste 4 — Falha intencional para análise de logs**
+**Teste 4- Falha intencional para análise de logs**
 - ARN do SNS alterado para valor inválido na Lambda `resource-analyzer`
 - Função executada → erro gerado
 - Investigação no **CloudWatch Logs**: localizado `ERROR`, `START RequestId` e `END RequestId`
@@ -271,7 +274,7 @@ def lambda_handler(event, context):
 
 ---
 
-## 🔍 CloudWatch Logs — Investigação de falhas
+## 🔍 CloudWatch Logs- Investigação de falhas
 
 ```
 /aws/lambda/resource-analyzer
@@ -287,38 +290,47 @@ def lambda_handler(event, context):
 | Linhas com `print()` | Output customizado da função |
 | Linhas com `ERROR` | Falhas a investigar e corrigir |
 
-> Simular falhas intencionais e investigar os logs é rotina de **NOC e Cloud Support**. Saber localizar um erro em CloudWatch Logs em produção é uma das habilidades mais cobradas em entrevistas para essas posições.
+> Simular falhas intencionais e investigar os logs é rotina. Saber localizar um erro em CloudWatch Logs em produção é uma das habilidades mais cobradas em entrevistas para essas posições.
 
 ---
 
 ## ✅ Resultado
 
-Três funções Lambda especializadas operando de forma independente, cada uma com sua responsabilidade, agendamento e permissões IAM distintas. Dashboard CloudWatch com visão em tempo real das instâncias, alarmes proativos disparando antes do problema virar fatura, e pipeline de conformidade de tags detectando desvios automaticamente — com logs completos para auditoria e troubleshooting.
+Três funções Lambda especializadas operando de forma independente, cada uma com sua responsabilidade, agendamento e permissões IAM distintas. Dashboard CloudWatch com visão em tempo real das instâncias, alarmes proativos disparando antes do problema virar fatura, e pipeline de conformidade de tags detectando desvios automaticamente, com logs completos para auditoria e troubleshooting.
 
 ---
 
 ## 📸 Evidências
 
-> _Adicione aqui os prints das etapas concluídas_
+Add trigger Lambda:
+<img width="1027" height="430" alt="add-trigger-lambda" src="https://github.com/user-attachments/assets/043193bf-5698-474d-952d-cb7624d2f329" />
+
+Alerta e-mail avisando sem tags:
+<img width="971" height="647" alt="alerta-email-ec2-semtags" src="https://github.com/user-attachments/assets/f5b2c960-e721-4380-ad88-f63feca34346" />
+
+Lambda resource analyzer:
+<img width="1459" height="774" alt="lambda-resourceanalyzer-succeeded" src="https://github.com/user-attachments/assets/b1215fbe-9d3e-427c-bd3c-bb3c60a33f04" />
+
+Mais imagens na pasta evidencias.
 
 ---
 
 ## 💡 Aprendizados
 
-**Separar responsabilidades entre Lambdas não é burocracia — é arquitetura**
+**Separar responsabilidades entre Lambdas não é burocracia é arquitetura**
 Meu primeiro instinto era colocar tudo em uma função só. Mantê-las separadas me forçou a pensar em permissões IAM distintas, agendamentos independentes e falhas isoladas. Uma função com erro não derruba as outras. Esse princípio se aplica a qualquer arquitetura serverless.
 
 **Dashboard CloudWatch é um mini NOC**
-Criar widgets para CPU, rede e instâncias diferentes em um painel único foi o momento em que entendi o que é observabilidade na prática. Em produção, esse dashboard seria a primeira tela que um analista de NOC abre ao chegar no plantão.
+Criar widgets para CPU, rede e instâncias diferentes em um painel único foi o momento em que entendi o que é observabilidade na prática.
 
-**Alarme em 100% é tarde demais — em 2% é cedo o suficiente**
-Configurar o alarme de CPU baixa me fez pensar em custo de forma diferente: uma instância idle pagando a hora inteira é desperdício silencioso. O alarme não serve para apagar incêndio — serve para evitar que ele comece.
+**Alarme em 100% é tarde demais, em 2% é cedo o suficiente**
+Configurar o alarme de CPU baixa me fez pensar em custo de forma diferente: uma instância idle pagando a hora inteira é desperdício silencioso. O alarme não serve para apagar incêndio, serve para evitar que ele comece.
 
 **CloudWatch Logs é a caixa preta da Lambda**
-Quando alterei o ARN do SNS para um valor inválido, a Lambda falhou silenciosamente no console. Os logs foram o único lugar onde o erro apareceu. Saber navegar em Log Groups, localizar o Request ID e ler o stack trace é uma habilidade real de operações cloud — não é só debug, é investigação.
+Quando alterei o ARN do SNS para um valor inválido, a Lambda falhou silenciosamente no console. Os logs foram o único lugar onde o erro apareceu. Saber navegar em Log Groups, localizar o Request ID e ler o stack trace não é só debug, é investigação.
 
 **Tag sem enforcement é tag que some**
-As instâncias `legacy-server` e `test-no-tags` não tinham tags porque ninguém as adicionou na criação. Em escala, isso é inevitável sem automação. A Lambda de compliance existe porque confiar em processo manual não funciona — precisa de código verificando.
+As instâncias `legacy-server` e `test-no-tags` não tinham tags porque ninguém as adicionou na criação. Em escala, isso é inevitável sem automação. A Lambda de compliance existe porque confiar em processo manual não funciona, precisa de código verificando.
 
 **IAM com menor privilégio protege o sistema de si mesmo**
 A role da Lambda tem acesso apenas ao que ela precisa. Se alguém comprometer a função, o raio de impacto é limitado. Permissão excessiva em Lambda é tão perigosa quanto porta 22 aberta para o mundo.
