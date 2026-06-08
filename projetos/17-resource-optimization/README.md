@@ -150,7 +150,7 @@ def lambda_handler(event, context):
     return {'report': report}
 ```
 
-**Agendamento:** `cron(0 12 * * ? *)` — todo dia ao meio-dia UTC
+**Agendamento:** `cron(0 12 * * ? *)` - todo dia ao meio-dia UTC
 
 ---
 
@@ -185,7 +185,7 @@ def lambda_handler(event, context):
     return {'statusCode': 200, 'key': key}
 ```
 
-**Agendamento:** `cron(0 9 * * ? *)` — todo dia às 09h UTC
+**Agendamento:** `cron(0 9 * * ? *)` - todo dia às 09h UTC
 
 ---
 
@@ -318,7 +318,7 @@ Mais imagens na pasta evidencias.
 ## 💡 Aprendizados
 
 **Separar responsabilidades entre Lambdas não é burocracia é arquitetura**
-Meu primeiro instinto era colocar tudo em uma função só. Mantê-las separadas me forçou a pensar em permissões IAM distintas, agendamentos independentes e falhas isoladas. Uma função com erro não derruba as outras. Esse princípio se aplica a qualquer arquitetura serverless.
+. Meu primeiro instinto era colocar tudo em uma função só. Mantê-las separadas me forçou a pensar em permissões IAM distintas, agendamentos independentes e falhas isoladas. Uma função com erro não derruba as outras. Esse princípio se aplica a qualquer arquitetura serverless.
 
 **Dashboard CloudWatch é um mini NOC**
 Criar widgets para CPU, rede e instâncias diferentes em um painel único foi o momento em que entendi o que é observabilidade na prática.
@@ -342,8 +342,8 @@ A role da Lambda tem acesso apenas ao que ela precisa. Se alguém comprometer a 
 - [AWS Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html)
 - [Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
 - [AWS Lambda](https://docs.aws.amazon.com/lambda/)
-- [Amazon EventBridge — Scheduled Rules](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-schedule.html)
-- [CloudWatch Logs — Lambda](https://docs.aws.amazon.com/lambda/latest/dg/monitoring-cloudwatchlogs.html)
+- [Amazon EventBridge - Scheduled Rules](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-schedule.html)
+- [CloudWatch Logs - Lambda](https://docs.aws.amazon.com/lambda/latest/dg/monitoring-cloudwatchlogs.html)
 
 ---
 
