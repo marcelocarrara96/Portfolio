@@ -228,7 +228,12 @@ WordPress em produção acessível via `https://d30taqzz5a71zi.cloudfront.net` c
 | # | Evidência |
 |---|---|
 | 1 | VPC criada com CIDR 10.0.0.0/16 e status Available |
+<img width="1484" height="396" alt="vpc-criada-ipv4-CIDR" src="https://github.com/user-attachments/assets/750af2ff-ea76-4f95-ab1d-7505ba48e370" />
+
 | 2 | 4 subnets listadas com AZs e CIDRs corretos |
+<img width="1687" height="283" alt="4-subnets-CIDR-AZ" src="https://github.com/user-attachments/assets/eda81372-5a50-4458-a347-67ea949d85c1" />
+
+
 | 3 | RDS wordpressdb com status Available e endpoint visível |
 | 4 | Bucket S3 wordpress-assets criado em us-east-1 |
 | 5 | EC2 wordpress-server Running com 2/2 checks passed |
