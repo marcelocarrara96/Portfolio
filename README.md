@@ -31,6 +31,7 @@ salvo indicação específica em contrário.
 | 15 | [Investigação de Segurança com AWS CloudTrail e Athena](./projetos/15-cloudtrail-security/README.md) | CloudTrail · Athena · IAM · EC2 · S3 · KMS | ✅ Concluído | Escola da Nuvem |
 | 16 | [AWS Cloud Migration Factory](./projetos/16-migration-factory/README.md) | CloudFormation · Lambda · API Gateway · DynamoDB · Cognito · SNS | ✅ Concluído | 🚀 Iniciativa própria |
 | 17 | [FinOps + Resource Optimization Center](./projetos/17-resource-optimization/README.md) | EC2 · Lambda · CloudWatch · SNS · EventBridge · Cost Explorer | ✅ Concluído | 🚀 Iniciativa própria |
+| 18 | [WordPress Production Architecture](./projetos/18-wordpress-architecture/README.md) | VPC · EC2 · RDS · ALB · S3 · CloudFront · CloudWatch · SNS | ✅ Concluído | 🚀 Iniciativa própria |
 
 > Novos projetos serão adicionados conforme o avanço nos estudos.
 
@@ -59,6 +60,8 @@ salvo indicação específica em contrário.
 ![CloudTrail](https://img.shields.io/badge/AWS-CloudTrail-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Cognito](https://img.shields.io/badge/AWS-Cognito-DD344C?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![DynamoDB](https://img.shields.io/badge/AWS-DynamoDB-527FFF?style=for-the-badge&logo=amazondynamodb&logoColor=white)
+![ALB](https://img.shields.io/badge/AWS-Load_Balancer-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![CloudFront](https://img.shields.io/badge/AWS-CloudFront-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 
 ---
 
