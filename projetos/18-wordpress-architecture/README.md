@@ -225,23 +225,36 @@ WordPress em produção acessível via `https://d30taqzz5a71zi.cloudfront.net` c
 
 ## 📸 Evidências
 
-| # | Evidência |
-|---|---|
 | 1 | VPC criada com CIDR 10.0.0.0/16 e status Available |
 <img width="1484" height="396" alt="vpc-criada-ipv4-CIDR" src="https://github.com/user-attachments/assets/750af2ff-ea76-4f95-ab1d-7505ba48e370" />
 
 | 2 | 4 subnets listadas com AZs e CIDRs corretos |
 <img width="1687" height="283" alt="4-subnets-CIDR-AZ" src="https://github.com/user-attachments/assets/eda81372-5a50-4458-a347-67ea949d85c1" />
 
-
 | 3 | RDS wordpressdb com status Available e endpoint visível |
+<img width="1630" height="746" alt="rds-created-endpoint-available" src="https://github.com/user-attachments/assets/782fd89e-0cb8-466b-b9ae-895baf13cb64" />
+
 | 4 | Bucket S3 wordpress-assets criado em us-east-1 |
+<img width="1013" height="316" alt="S3-bucket-created" src="https://github.com/user-attachments/assets/439b9ad2-1c71-4d10-a1d2-822b94e25cfd" />
+
 | 5 | EC2 wordpress-server Running com 2/2 checks passed |
+<img width="1667" height="426" alt="EC2-instance-created-publicIP" src="https://github.com/user-attachments/assets/ec6f48a4-6135-4bd4-aca8-3cf96722e185" />
+
 | 6 | ALB wordpress-alb Active com target Healthy |
+<img width="1497" height="694" alt="ALB-status-active" src="https://github.com/user-attachments/assets/4e2769e9-c3ec-42a9-b732-78985b18d556" />
+
 | 7 | WordPress Projeto 18 acessível via DNS do ALB |
+<img width="1911" height="851" alt="wordpress-working-ALB-DNS" src="https://github.com/user-attachments/assets/a8ac5a28-fbcf-471b-8776-eebf576960d4" />
+
 | 8 | 2 alarmes CloudWatch criados (cpu-high e cpu-low) |
+<img width="1672" height="371" alt="cloudwatch-alarms-created" src="https://github.com/user-attachments/assets/dc111e92-3f74-4319-b311-0be8e7b61c29" />
+
 | 9 | CloudFront distribution Enabled com domain visível |
+<img width="1909" height="280" alt="cloudfront-distribution-enabled-domainname" src="https://github.com/user-attachments/assets/48c4b05b-4d87-4f5c-ad3a-1ef4e8b90836" />
+
 | 10 | WordPress Projeto 18 acessível via CloudFront com HTTPS |
+<img width="1898" height="994" alt="wordpress-online-cloudfront" src="https://github.com/user-attachments/assets/b638ff29-9fa7-425c-b36e-1bf4ccc1a6a6" />
+
 
 > Pasta completa de evidências ao lado
 
