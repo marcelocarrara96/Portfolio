@@ -290,7 +290,7 @@ Criar os alarmes de CPU antes de precisar deles é o raciocínio de quem opera s
 - [Documentação Amazon CloudFront](https://docs.aws.amazon.com/cloudfront/)
 - [Documentação Amazon CloudWatch](https://docs.aws.amazon.com/cloudwatch/)
 - [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)
-- [WordPress on AWS — Best Practices](https://aws.amazon.com/wordpress/)
+- [WordPress on AWS, Best Practices](https://aws.amazon.com/wordpress/)
 
 ---
 
