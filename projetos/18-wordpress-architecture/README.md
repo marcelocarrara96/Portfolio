@@ -137,10 +137,10 @@ A solução foi construída em 9 fases, partindo da rede e subindo camada por ca
 | Recurso | Nome | CIDR / AZ |
 |---|---|---|
 | VPC | wordpress-prod-vpc | 10.0.0.0/16 |
-| Subnet pública A | public-subnet-1a | 10.0.1.0/24 — us-east-1a |
-| Subnet pública B | public-subnet-1b | 10.0.2.0/24 — us-east-1b |
-| Subnet privada A | private-subnet-1a | 10.0.11.0/24 — us-east-1a |
-| Subnet privada B | private-subnet-1b | 10.0.12.0/24 — us-east-1b |
+| Subnet pública A | public-subnet-1a | 10.0.1.0/24 - us-east-1a |
+| Subnet pública B | public-subnet-1b | 10.0.2.0/24 - us-east-1b |
+| Subnet privada A | private-subnet-1a | 10.0.11.0/24 - us-east-1a |
+| Subnet privada B | private-subnet-1b | 10.0.12.0/24 - us-east-1b |
 | Internet Gateway | wordpress-igw | Anexado à VPC |
 | Route Table pública | rtb-public | 0.0.0.0/0 → IGW |
 | Route Table privada | rtb-private | Sem rota para IGW |
