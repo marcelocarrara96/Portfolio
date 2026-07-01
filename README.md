@@ -32,6 +32,7 @@ salvo indicação específica em contrário.
 | 16 | [AWS Cloud Migration Factory](./projetos/16-migration-factory/README.md) | CloudFormation · Lambda · API Gateway · DynamoDB · Cognito · SNS | ✅ Concluído | 🚀 Iniciativa própria |
 | 17 | [FinOps + Resource Optimization Center](./projetos/17-resource-optimization/README.md) | EC2 · Lambda · CloudWatch · SNS · EventBridge · Cost Explorer | ✅ Concluído | 🚀 Iniciativa própria |
 | 18 | [WordPress Production Architecture](./projetos/18-wordpress-architecture/README.md) | VPC · EC2 · RDS · ALB · S3 · CloudFront · CloudWatch · SNS | ✅ Concluído | 🚀 Iniciativa própria |
+| 19 | [Hórus Tech - Infraestrutura & IA Avançada (TCC)](./(https://github.com/marcelocarrara96/horus-tech)) | VPC · EC2 · ALB · Auto Scaling · RDS · ElastiCache · CloudFront · WAF · Bedrock · Lex · Personalize · Textract | ✅ Concluído | 🎓 Escola da Nuvem |
 
 > Novos projetos serão adicionados conforme o avanço nos estudos.
 
