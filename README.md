@@ -75,7 +75,7 @@ salvo indicação específica em contrário.
 
 </div>
 
-*Atualizado em Junho 2026*
+*Atualizado em Julho 2026*
 
 ## Licença
 
