@@ -70,6 +70,7 @@ salvo indicação específica em contrário.
 ![Lex](https://img.shields.io/badge/AWS-Lex-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Personalize](https://img.shields.io/badge/AWS-Personalize-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Textract](https://img.shields.io/badge/AWS-Textract-527FFF?style=for-the-badge&logo=amazonaws&logoColor=white)
+
 ---
 
 <div align="center">
