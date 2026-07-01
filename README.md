@@ -63,7 +63,13 @@ salvo indicação específica em contrário.
 ![DynamoDB](https://img.shields.io/badge/AWS-DynamoDB-527FFF?style=for-the-badge&logo=amazondynamodb&logoColor=white)
 ![ALB](https://img.shields.io/badge/AWS-Load_Balancer-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![CloudFront](https://img.shields.io/badge/AWS-CloudFront-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![ElastiCache](https://img.shields.io/badge/AWS-ElastiCache-232F3E?style=for-the-badge&logo=amazonelasticache&logoColor=white)
+![WAF](https://img.shields.io/badge/AWS-WAF-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
 
+![Bedrock](https://img.shields.io/badge/AWS-Bedrock-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Lex](https://img.shields.io/badge/AWS-Lex-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Personalize](https://img.shields.io/badge/AWS-Personalize-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Textract](https://img.shields.io/badge/AWS-Textract-527FFF?style=for-the-badge&logo=amazonaws&logoColor=white)
 ---
 
 <div align="center">
