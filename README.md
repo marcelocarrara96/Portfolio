@@ -82,14 +82,14 @@ IA:
 
 <div align="center">
 
-**Marcelo Carrara** · AWS Certified Cloud Practitioner | Cloud Analyst Jr · Paraná, Brazil
+**Marcelo Carrara** · AWS Certified Cloud Practitioner | Cloud Analyst · São Paulo, Brazil
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcelo-carrara-tech/)
 [![GitHub](https://img.shields.io/badge/GitHub-FF9900?style=flat&logo=github&logoColor=white)](https://github.com/marcelocarrara96)
 
 </div>
 
-*Atualizado em Julho 2026*
+*Atualizado em Setembro 2026*
 
 ## Licença
 
