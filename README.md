@@ -1,7 +1,7 @@
 # ☁️ Portfólio AWS, Marcelo Carrara
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Status](https://img.shields.io/badge/Em_construção-🔨-yellow?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge)
 
 > Documentação prática da minha transição para Cloud Computing
 > com foco em me tornar **Cloud Analyst AWS**.
