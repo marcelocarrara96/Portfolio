@@ -6,8 +6,11 @@
 > Documentação prática da minha transição para Cloud Computing
 > com foco em me tornar **Cloud Analyst AWS**.
 
+
 > 💡 **Nota de Evolução Profissional**
+> 
 > Este repositório registra os meus primeiros passos e projetos práticos em Cloud AWS. As abordagens mais recentes, com maior rigor em sanitização de dados sensíveis (ARNs/IDs/etc), análise profunda de custos, trade-offs e Infraestrutura como Código um pouco mais avançada, estão centralizadas no meu **[Portfólio 2 - AWS Projects (v2)](https://github.com/marcelocarrara96/Portfolio-2.0)**.
+
 
 ---
 Todos os projetos deste repositório estão licenciados sob a MIT License,
